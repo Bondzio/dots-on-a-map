@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<Release Type="Component">
+  <Component ColumnIxSort="-1" ColumnOrderSort="-1" ProductName="uC-Common" RemapDst="" RemapSrc="">
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-Common/" Comment="µC/Common Core - Components used by Micrium products." Enabled="True" InheritedLabel="False" Label="%P %V" LabelAutomatic="True" RecursiveLabel="False" SKU="SRV-COMX-000000-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-Common" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_common/uc-common.git">
+        <File Name=".gitattributes" RepoPath=".gitattributes" Selected="False"/>
+        <File Name=".gitignore" RepoPath=".gitignore" Selected="False"/>
+        <File Name="common.h" RepoPath="common.h" Selected="True"/>
+        <File Name="common_err.h" RepoPath="common_err.h" Selected="True"/>
+        <Folder Expanded="True" RepoPath="Auth">
+          <File Name="auth.c" RepoPath="Auth/auth.c" Selected="True"/>
+          <File Name="auth.h" RepoPath="Auth/auth.h" Selected="True"/>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Collections">
+          <File Name="slist.c" RepoPath="Collections/slist.c" Selected="True"/>
+          <File Name="slist.h" RepoPath="Collections/slist.h" Selected="True"/>
+        </Folder>
+        <Folder Expanded="True" RepoPath="KAL">
+          <File Name="kal.h" RepoPath="KAL/kal.h" Selected="True"/>
+          <Folder Expanded="False" RepoPath="KAL/None">
+            <File Name="kal.c" RepoPath="KAL/None/kal.c" Selected="True"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="KAL/POSIX">
+            <File Name="kal.c" RepoPath="KAL/POSIX/kal.c" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="KAL/Template">
+            <File Name="kal.c" RepoPath="KAL/Template/kal.c" Selected="True"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="KAL/uCOS-II">
+            <File Name="kal.c" RepoPath="KAL/uCOS-II/kal.c" Selected="True"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="KAL/uCOS-III">
+            <File Name="kal.c" RepoPath="KAL/uCOS-III/kal.c" Selected="True"/>
+          </Folder>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+  </Component>
+  <Email Bcc="olivier.deschambault@micrium.com" Cc="executiveteam@micrium.com; salesteam@micrium.com; david.coon@micrium.com; chris.castaldo@micrium.com; jeanne.leiva@micrium.com" Enabled="False" From="uc-common@micrium.com" Subject="uC/Common V1.01.00" To="engineeringteam@micrium.com">
+    <EmailBody>FYI:
+
+A new version of µC/Common has been released and is now available on Amazon for customers to download:
+
+    uC/Common V1.01.00
+
+Release Date: 2015-02-24
+
+Requirements
+    µC/LIB V1.38.00
+    µC/CPU V1.29.02 or more recent
+
+New features &amp; improvements
+    Initial release of Authentication module.
+    Added file common.h which defines COMMON_VERSION.
+    Added file common_err.h, which contains the new error type RTOS_ERR, used throughout µC/Common.
+    Conversion or KAL_ERR to RTOS_ERR, in KAL.
+
+Bug fixes
+    N/A
+
+This is an automated message sent by FastRelease3. Please do not reply. If you would like to be removed from this mailing list, please ask the µC/Common team.</EmailBody>
+  </Email>
+</Release>

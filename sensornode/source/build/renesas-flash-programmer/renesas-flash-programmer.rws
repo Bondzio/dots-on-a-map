@@ -1,0 +1,12 @@
+<RfpWorkspace>
+  <ProductVersion>2.05.01.00</ProductVersion>
+  <FormatVersion>2.0</FormatVersion>
+  <WindowMode>0</WindowMode>
+  <ActiveProjectName>renesas-flash-programmer</ActiveProjectName>
+  <Name project="renesas-flash-programmer">
+    <RelativePath>renesas-flash-programmer\renesas-flash-programmer.rpj</RelativePath>
+    <ActiveProgramName>C:\Users\jcarroll\Development\m1-factory-demo\build\iar\debug\bin\ywireless-rx111-m1-factory-demo.hex</ActiveProgramName>
+    <ProgramName>C:\Users\jcarroll\Development\m1-factory-demo\build\iar\debug\bin\ywireless-rx111-m1-factory-demo.hex</ProgramName>
+    <UserBoot>0</UserBoot>
+  </Name>
+</RfpWorkspace>

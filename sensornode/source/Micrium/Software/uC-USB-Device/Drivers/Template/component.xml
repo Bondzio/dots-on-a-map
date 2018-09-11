@@ -1,0 +1,12 @@
+<!-- uC/USB-Device Template driver component XML file for ConfigBuilder -->
+<!-- Author: CM -->
+
+<xs:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns:xs="http://xml.micrium.com/schema/component">
+	<!-- Components: Drivers - Template -->
+	<component id="com.micrium.ucusbd.driver.template" name="Template" type="component">
+		<description> uC/USB-Device Template Driver </description>
+		<sourceDir needIncludePath="true">.</sourceDir>
+	</component>
+</xs:root>
+   

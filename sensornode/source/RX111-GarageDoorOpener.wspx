@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<workspace>
+  <symbolbrowser>
+    <symbolfiles>
+      <symbolfile Filepath=".\build\iar\debug\bin\ywireless-rx111-m1-factory-demo.out" />
+    </symbolfiles>
+  </symbolbrowser>
+  <screens SelectedScreenId="KernelAwarenessScreen1">
+    <screen RegisteredName="DataScreen1" ScreenHeader="Garage Door" ScreenType="DataScreen" />
+    <screen RegisteredName="KernelAwarenessScreen1" ScreenHeader="µC/OS-III Awareness" ScreenType="KernelAwarenssScreen" />
+  </screens>
+  <nodes>
+    <node ScreenId="DataScreen1" OffsetX="40" OffsetY="140" AllowMove="true" AllowResize="true" AllowRotate="false" AllowSelect="true" IsInRuntimeMode="false" Width="245" Height="180" ZIndex="1" IsLocked="false" UpdateWhenVisible="true" LabelBackgroundValue="#00FFFFFF" LabelFontFamilyValue="Segoe UI" LabelFontSizeValue="14" LabelFontStyleValue="Normal" LabelFontWeightValue="Normal" LabelForegroundValue="#FF000000" LabelTextAlignmentValue="Center" LabelTextTrimming="None" LabelTextWrapping="Wrap" LabelVerticalAlignment="Center" LabelHorizontalAlignment="Center" LabelVisibility="Collapsed" IsWritableControl="false" WritableValue="0" LabelValue="">
+      <innercontent>
+        <content ControlType="Bitmap" Type="Bitmap">
+          <definitions Width="245" Height="180" IsTransitionEffectEnabled="true" />
+          <images>
+            <image Comparison="IsEqualTo" ComparisonValue="0" Path="" Tooltip="" Source="System.Windows.Interop.InteropBitmap" ImageRepresentation="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" FileExtension=".png" Width="245" Height="180" />
+            <image Comparison="IsNotEqualTo" ComparisonValue="0" Path="" Tooltip="" Source="System.Windows.Interop.InteropBitmap" ImageRepresentation="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" FileExtension=".png" Width="245" Height="180" />
+          </images>
+        </content>
+      </innercontent>
+      <symbols>
+        <symbol path="SHG_GarageIsOpen" IsAnArrayElement="false" ElementIndex="-1" />
+      </symbols>
+    </node>
+    <node ScreenId="DataScreen1" OffsetX="40" OffsetY="20" AllowMove="true" AllowResize="true" AllowRotate="false" AllowSelect="true" IsInRuntimeMode="false" Width="679" Height="50" ZIndex="2" IsLocked="false" UpdateWhenVisible="true" LabelBackgroundValue="#00FFFFFF" LabelFontFamilyValue="Segoe UI" LabelFontSizeValue="14" LabelFontStyleValue="Normal" LabelFontWeightValue="Normal" LabelForegroundValue="#FF000000" LabelTextAlignmentValue="Center" LabelTextTrimming="None" LabelTextWrapping="Wrap" LabelVerticalAlignment="Center" LabelHorizontalAlignment="Center" LabelVisibility="Collapsed" IsWritableControl="false" WritableValue="0" LabelValue="">
+      <innercontent>
+        <content ControlType="TextTool" Type="TextTool">
+          <definitions BackgroundValue="#00FFFFFF" FontFamilyValue="Arial Black" FontSizeValue="20" FontStyleValue="Normal" FontWeightValue="Normal" ForegroundValue="#FF000000" TextAlignmentValue="Left" IsThousandSeparatorEnabled="false" ScalingFactor="1" ScalingOffset="0" ScalingFormat="" LeadingZeroes="0" DecimalPlaces="0" Width="NaN" Height="NaN" ContainsAssignedSymbols="false" Text="Renesas Wi-Fi Cloud Connectivity Kit &#xD;&#xA;for the RX111 (YWIRELESS-RX111)" />
+        </content>
+      </innercontent>
+      <symbols />
+    </node>
+    <node ScreenId="DataScreen1" OffsetX="40" OffsetY="80" AllowMove="true" AllowResize="true" AllowRotate="false" AllowSelect="true" IsInRuntimeMode="false" Width="250" Height="50" ZIndex="3" IsLocked="false" UpdateWhenVisible="true" LabelBackgroundValue="#00FFFFFF" LabelFontFamilyValue="Segoe UI" LabelFontSizeValue="14" LabelFontStyleValue="Normal" LabelFontWeightValue="Normal" LabelForegroundValue="#FF000000" LabelTextAlignmentValue="Center" LabelTextTrimming="None" LabelTextWrapping="Wrap" LabelVerticalAlignment="Center" LabelHorizontalAlignment="Center" LabelVisibility="Collapsed" IsWritableControl="false" WritableValue="0" LabelValue="">
+      <innercontent>
+        <content ControlType="TextTool" Type="TextTool">
+          <definitions BackgroundValue="#00FFFFFF" FontFamilyValue="Arial Black" FontSizeValue="16" FontStyleValue="Normal" FontWeightValue="Normal" ForegroundValue="#FF000000" TextAlignmentValue="Left" IsThousandSeparatorEnabled="false" ScalingFactor="1" ScalingOffset="0" ScalingFormat="" LeadingZeroes="0" DecimalPlaces="0" Width="NaN" Height="NaN" ContainsAssignedSymbols="false" Text="Smart Garage Door Opener" />
+        </content>
+      </innercontent>
+      <symbols />
+    </node>
+  </nodes>
+  <explorer>
+    <content>
+      <nodes>
+        <node IsEnable="true" Name="Project1" NodeType="Project" ScreenType="None" UniqueID="Project2">
+          <node IsEnable="true" Name="Garage Door" NodeType="Screen" ScreenType="DataScreen" UniqueID="DataScreen1" />
+          <node IsEnable="true" Name="µC/OS-III Awareness" NodeType="Screen" ScreenType="KernelAwarenssScreen" UniqueID="KernelAwarenessScreen1" />
+        </node>
+      </nodes>
+    </content>
+  </explorer>
+  <application>
+    <docking>
+      <ArrayOfDockingParams xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <DockingParams>
+          <PreviousFloatingWindowRect />
+          <FloatWindowState>Normal</FloatWindowState>
+          <ZorderInFloatMode>0</ZorderInFloatMode>
+          <TabOrderIndex>-1</TabOrderIndex>
+          <PreviousContainerDesiredSize>
+            <Width>0</Width>
+            <Height>368.80333333333328</Height>
+          </PreviousContainerDesiredSize>
+          <PreviousDesiredWidthInDockedMode>165</PreviousDesiredWidthInDockedMode>
+          <PreviousDesiredHeightInDockedMode>90</PreviousDesiredHeightInDockedMode>
+          <Name>workspaceExplorerMainView</Name>
+          <State>Dock</State>
+          <NoHeader>false</NoHeader>
+          <SideDocked>Right</SideDocked>
+          <SideFloating>Left</SideFloating>
+          <TargetDocked />
+          <TargetFloating />
+          <DesiredWidthInDockedMode>165</DesiredWidthInDockedMode>
+          <DesiredHeightInDockedMode>368.80333333333328</DesiredHeightInDockedMode>
+          <DesiredWidthInFloatingMode>165</DesiredWidthInFloatingMode>
+          <DesiredHeightInFloatingMode>90</DesiredHeightInFloatingMode>
+          <NoDock>false</NoDock>
+          <CanDock>true</CanDock>
+          <CanClose>false</CanClose>
+          <IsSelectedTab>true</IsSelectedTab>
+          <IsActiveWindow>false</IsActiveWindow>
+          <WindowRect />
+          <TabGroupName />
+          <IsTabGroupOwner>false</IsTabGroupOwner>
+          <SideTabOrder>0</SideTabOrder>
+          <IndexInDockMode>4</IndexInDockMode>
+          <IndexInFloatMode>4</IndexInFloatMode>
+          <TabOrderInDockMode>0</TabOrderInDockMode>
+          <TabOrderInFloatMode>0</TabOrderInFloatMode>
+          <MDIBounds>0,0,100,50</MDIBounds>
+          <TDIIndex>-1</TDIIndex>
+          <IsSelected>false</IsSelected>
+          <MDIMinimizedBounds>0,0,124,24</MDIMinimizedBounds>
+          <MDIWindowState>Normal</MDIWindowState>
+          <AllowMDIResize>true</AllowMDIResize>
+          <TDIGroupOrientation>Horizontal</TDIGroupOrientation>
+          <WayOfTDIGroup />
+          <DockForSide>Left</DockForSide>
+          <PreviousIndexInDockMode>0</PreviousIndexInDockMode>
+          <PreviousSideInDockMode>Left</PreviousSideInDockMode>
+          <DoShift>false</DoShift>
+          <SideRelativetoContainer>Left</SideRelativetoContainer>
+          <TabParent />
+          <DockWindowState>Normal</DockWindowState>
+          <CanMaximize>true</CanMaximize>
+          <CanMinimize>true</CanMinimize>
+          <CanResizeInDockedState>true</CanResizeInDockedState>
+          <CanResizeHeightInDockedState>true</CanResizeHeightInDockedState>
+          <CanResizeWidthInDockedState>true</CanResizeWidthInDockedState>
+          <CanResizeInFloatState>true</CanResizeInFloatState>
+          <CanResizeHeightInFloatState>true</CanResizeHeightInFloatState>
+          <CanResizeWidthInFloatState>true</CanResizeWidthInFloatState>
+          <CanFloatMaximize>false</CanFloatMaximize>
+          <IsFixedSize>false</IsFixedSize>
+          <IsFixedHeight>false</IsFixedHeight>
+          <IsFixedWidth>false</IsFixedWidth>
+          <FixedHeight>0</FixedHeight>
+          <FixedWidth>0</FixedWidth>
+          <ContainerSize>
+            <Width>869.09281437125742</Width>
+            <Height>368.80333333333328</Height>
+          </ContainerSize>
+          <PreviousHostWidth>90</PreviousHostWidth>
+          <PreviousHostHeight>90</PreviousHostHeight>
+          <PreviousContainerHeight>90</PreviousContainerHeight>
+          <PreviousContainerWidth>90</PreviousContainerWidth>
+          <TargetAutoHide />
+          <SplitPanelOffset>0</SplitPanelOffset>
+          <IsSwapped>false</IsSwapped>
+        </DockingParams>
+        <DockingParams>
+          <PreviousFloatingWindowRect />
+          <FloatWindowState>Normal</FloatWindowState>
+          <ZorderInFloatMode>0</ZorderInFloatMode>
+          <TabOrderIndex>-1</TabOrderIndex>
+          <PreviousContainerDesiredSize>
+            <Width>827</Width>
+            <Height>0</Height>
+          </PreviousContainerDesiredSize>
+          <PreviousDesiredWidthInDockedMode>90</PreviousDesiredWidthInDockedMode>
+          <PreviousDesiredHeightInDockedMode>200</PreviousDesiredHeightInDockedMode>
+          <Name>usrSymbolBrowser</Name>
+          <State>Dock</State>
+          <NoHeader>false</NoHeader>
+          <SideDocked>Bottom</SideDocked>
+          <SideFloating>Left</SideFloating>
+          <TargetDocked />
+          <TargetFloating />
+          <DesiredWidthInDockedMode>869.09281437125742</DesiredWidthInDockedMode>
+          <DesiredHeightInDockedMode>200</DesiredHeightInDockedMode>
+          <DesiredWidthInFloatingMode>90</DesiredWidthInFloatingMode>
+          <DesiredHeightInFloatingMode>200</DesiredHeightInFloatingMode>
+          <NoDock>false</NoDock>
+          <CanDock>true</CanDock>
+          <CanClose>false</CanClose>
+          <IsSelectedTab>true</IsSelectedTab>
+          <IsActiveWindow>false</IsActiveWindow>
+          <WindowRect />
+          <TabGroupName />
+          <IsTabGroupOwner>false</IsTabGroupOwner>
+          <SideTabOrder>0</SideTabOrder>
+          <IndexInDockMode>3</IndexInDockMode>
+          <IndexInFloatMode>3</IndexInFloatMode>
+          <TabOrderInDockMode>0</TabOrderInDockMode>
+          <TabOrderInFloatMode>0</TabOrderInFloatMode>
+          <MDIBounds>0,0,100,50</MDIBounds>
+          <TDIIndex>-1</TDIIndex>
+          <IsSelected>false</IsSelected>
+          <MDIMinimizedBounds>0,0,124,24</MDIMinimizedBounds>
+          <MDIWindowState>Normal</MDIWindowState>
+          <AllowMDIResize>true</AllowMDIResize>
+          <TDIGroupOrientation>Horizontal</TDIGroupOrientation>
+          <WayOfTDIGroup />
+          <DockForSide>Left</DockForSide>
+          <PreviousIndexInDockMode>0</PreviousIndexInDockMode>
+          <PreviousSideInDockMode>Left</PreviousSideInDockMode>
+          <DoShift>false</DoShift>
+          <SideRelativetoContainer>Left</SideRelativetoContainer>
+          <TabParent />
+          <DockWindowState>Normal</DockWindowState>
+          <CanMaximize>true</CanMaximize>
+          <CanMinimize>true</CanMinimize>
+          <CanResizeInDockedState>true</CanResizeInDockedState>
+          <CanResizeHeightInDockedState>true</CanResizeHeightInDockedState>
+          <CanResizeWidthInDockedState>true</CanResizeWidthInDockedState>
+          <CanResizeInFloatState>true</CanResizeInFloatState>
+          <CanResizeHeightInFloatState>true</CanResizeHeightInFloatState>
+          <CanResizeWidthInFloatState>true</CanResizeWidthInFloatState>
+          <CanFloatMaximize>false</CanFloatMaximize>
+          <IsFixedSize>false</IsFixedSize>
+          <IsFixedHeight>false</IsFixedHeight>
+          <IsFixedWidth>false</IsFixedWidth>
+          <FixedHeight>0</FixedHeight>
+          <FixedWidth>0</FixedWidth>
+          <ContainerSize>
+            <Width>869.09281437125742</Width>
+            <Height>572.80333333333328</Height>
+          </ContainerSize>
+          <PreviousHostWidth>90</PreviousHostWidth>
+          <PreviousHostHeight>90</PreviousHostHeight>
+          <PreviousContainerHeight>90</PreviousContainerHeight>
+          <PreviousContainerWidth>90</PreviousContainerWidth>
+          <TargetAutoHide />
+          <SplitPanelOffset>0</SplitPanelOffset>
+          <IsSwapped>false</IsSwapped>
+        </DockingParams>
+        <DockingParams>
+          <PreviousFloatingWindowRect />
+          <FloatWindowState>Normal</FloatWindowState>
+          <ZorderInFloatMode>0</ZorderInFloatMode>
+          <TabOrderIndex>-1</TabOrderIndex>
+          <PreviousContainerDesiredSize>
+            <Width>0</Width>
+            <Height>0</Height>
+          </PreviousContainerDesiredSize>
+          <PreviousDesiredWidthInDockedMode>175</PreviousDesiredWidthInDockedMode>
+          <PreviousDesiredHeightInDockedMode>90</PreviousDesiredHeightInDockedMode>
+          <Name>toolboxMainView</Name>
+          <State>Dock</State>
+          <NoHeader>false</NoHeader>
+          <SideDocked>Left</SideDocked>
+          <SideFloating>Left</SideFloating>
+          <TargetDocked />
+          <TargetFloating />
+          <DesiredWidthInDockedMode>183.9071856287425</DesiredWidthInDockedMode>
+          <DesiredHeightInDockedMode>572.80333333333328</DesiredHeightInDockedMode>
+          <DesiredWidthInFloatingMode>175</DesiredWidthInFloatingMode>
+          <DesiredHeightInFloatingMode>90</DesiredHeightInFloatingMode>
+          <NoDock>false</NoDock>
+          <CanDock>true</CanDock>
+          <CanClose>false</CanClose>
+          <IsSelectedTab>true</IsSelectedTab>
+          <IsActiveWindow>true</IsActiveWindow>
+          <WindowRect />
+          <TabGroupName />
+          <IsTabGroupOwner>false</IsTabGroupOwner>
+          <SideTabOrder>0</SideTabOrder>
+          <IndexInDockMode>2</IndexInDockMode>
+          <IndexInFloatMode>2</IndexInFloatMode>
+          <TabOrderInDockMode>0</TabOrderInDockMode>
+          <TabOrderInFloatMode>0</TabOrderInFloatMode>
+          <MDIBounds>0,0,100,50</MDIBounds>
+          <TDIIndex>-1</TDIIndex>
+          <IsSelected>false</IsSelected>
+          <MDIMinimizedBounds>0,0,124,24</MDIMinimizedBounds>
+          <MDIWindowState>Normal</MDIWindowState>
+          <AllowMDIResize>true</AllowMDIResize>
+          <TDIGroupOrientation>Horizontal</TDIGroupOrientation>
+          <WayOfTDIGroup />
+          <DockForSide>Left</DockForSide>
+          <PreviousIndexInDockMode>0</PreviousIndexInDockMode>
+          <PreviousSideInDockMode>Left</PreviousSideInDockMode>
+          <DoShift>false</DoShift>
+          <SideRelativetoContainer>Left</SideRelativetoContainer>
+          <TabParent />
+          <DockWindowState>Normal</DockWindowState>
+          <CanMaximize>true</CanMaximize>
+          <CanMinimize>true</CanMinimize>
+          <CanResizeInDockedState>true</CanResizeInDockedState>
+          <CanResizeHeightInDockedState>true</CanResizeHeightInDockedState>
+          <CanResizeWidthInDockedState>true</CanResizeWidthInDockedState>
+          <CanResizeInFloatState>true</CanResizeInFloatState>
+          <CanResizeHeightInFloatState>true</CanResizeHeightInFloatState>
+          <CanResizeWidthInFloatState>true</CanResizeWidthInFloatState>
+          <CanFloatMaximize>false</CanFloatMaximize>
+          <IsFixedSize>false</IsFixedSize>
+          <IsFixedHeight>false</IsFixedHeight>
+          <IsFixedWidth>false</IsFixedWidth>
+          <FixedHeight>0</FixedHeight>
+          <FixedWidth>0</FixedWidth>
+          <ContainerSize>
+            <Width>1057</Width>
+            <Height>572.80333333333328</Height>
+          </ContainerSize>
+          <PreviousHostWidth>90</PreviousHostWidth>
+          <PreviousHostHeight>90</PreviousHostHeight>
+          <PreviousContainerHeight>90</PreviousContainerHeight>
+          <PreviousContainerWidth>90</PreviousContainerWidth>
+          <TargetAutoHide />
+          <SplitPanelOffset>0</SplitPanelOffset>
+          <IsSwapped>false</IsSwapped>
+        </DockingParams>
+        <DockingParams>
+          <PreviousFloatingWindowRect />
+          <FloatWindowState>Normal</FloatWindowState>
+          <ZorderInFloatMode>0</ZorderInFloatMode>
+          <TabOrderIndex>0</TabOrderIndex>
+          <PreviousContainerDesiredSize>
+            <Width>0</Width>
+            <Height>0</Height>
+          </PreviousContainerDesiredSize>
+          <PreviousDesiredWidthInDockedMode>0</PreviousDesiredWidthInDockedMode>
+          <PreviousDesiredHeightInDockedMode>0</PreviousDesiredHeightInDockedMode>
+          <Name>AddedName1</Name>
+          <State>Document</State>
+          <NoHeader>false</NoHeader>
+          <SideDocked>Left</SideDocked>
+          <SideFloating>Left</SideFloating>
+          <TargetDocked />
+          <TargetFloating />
+          <DesiredWidthInDockedMode>90</DesiredWidthInDockedMode>
+          <DesiredHeightInDockedMode>90</DesiredHeightInDockedMode>
+          <DesiredWidthInFloatingMode>90</DesiredWidthInFloatingMode>
+          <DesiredHeightInFloatingMode>90</DesiredHeightInFloatingMode>
+          <NoDock>false</NoDock>
+          <CanDock>false</CanDock>
+          <CanClose>false</CanClose>
+          <IsSelectedTab>false</IsSelectedTab>
+          <IsActiveWindow>false</IsActiveWindow>
+          <WindowRect />
+          <TabGroupName />
+          <IsTabGroupOwner>false</IsTabGroupOwner>
+          <SideTabOrder>0</SideTabOrder>
+          <IndexInDockMode>1</IndexInDockMode>
+          <IndexInFloatMode>1</IndexInFloatMode>
+          <TabOrderInDockMode>0</TabOrderInDockMode>
+          <TabOrderInFloatMode>0</TabOrderInFloatMode>
+          <MDIBounds>0,0,100,50</MDIBounds>
+          <TDIIndex>0</TDIIndex>
+          <IsSelected>false</IsSelected>
+          <MDIMinimizedBounds>0,0,124,24</MDIMinimizedBounds>
+          <MDIWindowState>Normal</MDIWindowState>
+          <AllowMDIResize>true</AllowMDIResize>
+          <TDIGroupOrientation>Horizontal</TDIGroupOrientation>
+          <WayOfTDIGroup />
+          <DockForSide>Left</DockForSide>
+          <PreviousIndexInDockMode>0</PreviousIndexInDockMode>
+          <PreviousSideInDockMode>Left</PreviousSideInDockMode>
+          <DoShift>false</DoShift>
+          <SideRelativetoContainer>Left</SideRelativetoContainer>
+          <TabParent />
+          <DockWindowState>Normal</DockWindowState>
+          <CanMaximize>true</CanMaximize>
+          <CanMinimize>true</CanMinimize>
+          <CanResizeInDockedState>true</CanResizeInDockedState>
+          <CanResizeHeightInDockedState>true</CanResizeHeightInDockedState>
+          <CanResizeWidthInDockedState>true</CanResizeWidthInDockedState>
+          <CanResizeInFloatState>true</CanResizeInFloatState>
+          <CanResizeHeightInFloatState>true</CanResizeHeightInFloatState>
+          <CanResizeWidthInFloatState>true</CanResizeWidthInFloatState>
+          <CanFloatMaximize>false</CanFloatMaximize>
+          <IsFixedSize>false</IsFixedSize>
+          <IsFixedHeight>false</IsFixedHeight>
+          <IsFixedWidth>false</IsFixedWidth>
+          <FixedHeight>0</FixedHeight>
+          <FixedWidth>0</FixedWidth>
+          <ContainerSize>
+            <Width>0</Width>
+            <Height>0</Height>
+          </ContainerSize>
+          <PreviousHostWidth>90</PreviousHostWidth>
+          <PreviousHostHeight>90</PreviousHostHeight>
+          <PreviousContainerHeight>90</PreviousContainerHeight>
+          <PreviousContainerWidth>90</PreviousContainerWidth>
+          <TargetAutoHide />
+          <SplitPanelOffset>0</SplitPanelOffset>
+          <IsSwapped>false</IsSwapped>
+        </DockingParams>
+        <DockingParams>
+          <PreviousFloatingWindowRect />
+          <FloatWindowState>Normal</FloatWindowState>
+          <ZorderInFloatMode>0</ZorderInFloatMode>
+          <TabOrderIndex>1</TabOrderIndex>
+          <PreviousContainerDesiredSize>
+            <Width>0</Width>
+            <Height>0</Height>
+          </PreviousContainerDesiredSize>
+          <PreviousDesiredWidthInDockedMode>0</PreviousDesiredWidthInDockedMode>
+          <PreviousDesiredHeightInDockedMode>0</PreviousDesiredHeightInDockedMode>
+          <Name>AddedName2</Name>
+          <State>Document</State>
+          <NoHeader>false</NoHeader>
+          <SideDocked>Left</SideDocked>
+          <SideFloating>Left</SideFloating>
+          <TargetDocked />
+          <TargetFloating />
+          <DesiredWidthInDockedMode>90</DesiredWidthInDockedMode>
+          <DesiredHeightInDockedMode>90</DesiredHeightInDockedMode>
+          <DesiredWidthInFloatingMode>90</DesiredWidthInFloatingMode>
+          <DesiredHeightInFloatingMode>90</DesiredHeightInFloatingMode>
+          <NoDock>false</NoDock>
+          <CanDock>false</CanDock>
+          <CanClose>false</CanClose>
+          <IsSelectedTab>false</IsSelectedTab>
+          <IsActiveWindow>false</IsActiveWindow>
+          <WindowRect />
+          <TabGroupName />
+          <IsTabGroupOwner>false</IsTabGroupOwner>
+          <SideTabOrder>0</SideTabOrder>
+          <IndexInDockMode>0</IndexInDockMode>
+          <IndexInFloatMode>0</IndexInFloatMode>
+          <TabOrderInDockMode>0</TabOrderInDockMode>
+          <TabOrderInFloatMode>0</TabOrderInFloatMode>
+          <MDIBounds>0,0,100,50</MDIBounds>
+          <TDIIndex>1</TDIIndex>
+          <IsSelected>true</IsSelected>
+          <MDIMinimizedBounds>0,0,124,24</MDIMinimizedBounds>
+          <MDIWindowState>Normal</MDIWindowState>
+          <AllowMDIResize>true</AllowMDIResize>
+          <TDIGroupOrientation>Horizontal</TDIGroupOrientation>
+          <WayOfTDIGroup />
+          <DockForSide>Left</DockForSide>
+          <PreviousIndexInDockMode>0</PreviousIndexInDockMode>
+          <PreviousSideInDockMode>Left</PreviousSideInDockMode>
+          <DoShift>false</DoShift>
+          <SideRelativetoContainer>Left</SideRelativetoContainer>
+          <TabParent />
+          <DockWindowState>Normal</DockWindowState>
+          <CanMaximize>true</CanMaximize>
+          <CanMinimize>true</CanMinimize>
+          <CanResizeInDockedState>true</CanResizeInDockedState>
+          <CanResizeHeightInDockedState>true</CanResizeHeightInDockedState>
+          <CanResizeWidthInDockedState>true</CanResizeWidthInDockedState>
+          <CanResizeInFloatState>true</CanResizeInFloatState>
+          <CanResizeHeightInFloatState>true</CanResizeHeightInFloatState>
+          <CanResizeWidthInFloatState>true</CanResizeWidthInFloatState>
+          <CanFloatMaximize>false</CanFloatMaximize>
+          <IsFixedSize>false</IsFixedSize>
+          <IsFixedHeight>false</IsFixedHeight>
+          <IsFixedWidth>false</IsFixedWidth>
+          <FixedHeight>0</FixedHeight>
+          <FixedWidth>0</FixedWidth>
+          <ContainerSize>
+            <Width>0</Width>
+            <Height>0</Height>
+          </ContainerSize>
+          <PreviousHostWidth>90</PreviousHostWidth>
+          <PreviousHostHeight>90</PreviousHostHeight>
+          <PreviousContainerHeight>90</PreviousContainerHeight>
+          <PreviousContainerWidth>90</PreviousContainerWidth>
+          <TargetAutoHide />
+          <SplitPanelOffset>0</SplitPanelOffset>
+          <IsSwapped>false</IsSwapped>
+        </DockingParams>
+      </ArrayOfDockingParams>
+    </docking>
+  </application>
+</workspace>

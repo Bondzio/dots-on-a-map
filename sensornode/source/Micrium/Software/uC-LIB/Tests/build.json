@@ -1,0 +1,113 @@
+{
+    "title"         : "uC-LIB Configuration Build Tests",
+    "test_sequence" : [
+        {
+            "title"       : "Default Cfg",
+            "number"      : 0,
+            "description" : "Build Test",
+            "setup"       : [
+                "SetDefine('../Cfg/Template/lib_cfg.h', 'lib_cfg.h', {'LIB_MEM_CFG_ARG_CHK_EXT_EN' : 'DEF_DISABLED', 'LIB_MEM_CFG_OPTIMIZE_ASM_EN' : 'DEF_DISABLED', 'LIB_MEM_CFG_DBG_INFO_EN' : 'DEF_DISABLED', 'LIB_MEM_CFG_HEAP_PADDING_ALIGN' : 'LIB_MEM_PADDING_ALIGN_NONE', 'LIB_STR_CFG_FP_EN' : 'DEF_DISABLED', 'LIB_STR_CFG_FP_MAX_NBR_DIG_SIG' : 'LIB_STR_FP_MAX_NBR_DIG_SIG_DFLT'})"
+            ],
+            "test" : [
+                "builder.ProjectBuild()"
+            ],
+            "validation"  : [
+                "tp = tp and Assert(builder.build_success, True)"
+            ],
+            "on-failure" : [
+                "error_list.append(builder.cmdErr)",
+                "error_list.append(builder.cmdOut)"
+            ]
+        },
+        {
+            "title"       : "LIB_MEM_CFG_ARG_CHK_EXT_EN Cfg",
+            "number"      : 1,
+            "description" : "Build Test",
+            "setup"       : [
+                "SetDefine('../Cfg/Template/lib_cfg.h', 'lib_cfg.h', {'LIB_MEM_CFG_ARG_CHK_EXT_EN' : 'DEF_ENABLED'})"
+            ],
+            "test" : [
+                "builder.ProjectBuild()"
+            ],
+            "validation"  : [
+                "tp = tp and Assert(builder.build_success, True)"
+            ],
+            "on-failure" : [
+                "error_list.append(builder.cmdErr)",
+                "error_list.append(builder.cmdOut)"
+            ]
+        },
+        {
+            "title"       : "LIB_STR_CFG_FP_EN Cfg",
+            "number"      : 2,
+            "description" : "Build Test",
+            "setup"       : [
+                "SetDefine('../Cfg/Template/lib_cfg.h', 'lib_cfg.h', {'LIB_STR_CFG_FP_EN' : 'DEF_ENABLED'})"
+            ],
+            "test" : [
+                "builder.ProjectBuild()"
+            ],
+            "validation"  : [
+                "tp = tp and Assert(builder.build_success, True)"
+            ],
+            "on-failure" : [
+                "error_list.append(builder.cmdErr)",
+                "error_list.append(builder.cmdOut)"
+            ]
+        },
+        {
+            "title"       : "LIB_STR_CFG_FP_MAX_NBR_DIG_SIG MIN Cfg",
+            "number"      : 3,
+            "description" : "Build Test",
+            "setup"       : [
+                "SetDefine('../Cfg/Template/lib_cfg.h', 'lib_cfg.h', {'LIB_STR_CFG_FP_MAX_NBR_DIG_SIG' : 'LIB_STR_FP_MAX_NBR_DIG_SIG_MIN'})"
+            ],
+            "test" : [
+                "builder.ProjectBuild()"
+            ],
+            "validation"  : [
+                "tp = tp and Assert(builder.build_success, True)"
+            ],
+            "on-failure" : [
+                "error_list.append(builder.cmdErr)",
+                "error_list.append(builder.cmdOut)"
+            ]
+        },
+        {
+            "title"       : "LIB_STR_CFG_FP_MAX_NBR_DIG_SIG MAX Cfg",
+            "number"      : 4,
+            "description" : "Build Test",
+            "setup"       : [
+                "SetDefine('../Cfg/Template/lib_cfg.h', 'lib_cfg.h', {'LIB_STR_CFG_FP_MAX_NBR_DIG_SIG' : 'LIB_STR_FP_MAX_NBR_DIG_SIG_MAX'})"
+            ],
+            "test" : [
+                "builder.ProjectBuild()"
+            ],
+            "validation"  : [
+                "tp = tp and Assert(builder.build_success, True)"
+            ],
+            "on-failure" : [
+                "error_list.append(builder.cmdErr)",
+                "error_list.append(builder.cmdOut)"
+            ]
+        },
+        {
+            "title"       : "LIB_MEM_CFG_HEAP_SIZE Enabled",
+            "number"      : 5,
+            "description" : "Build Test",
+            "setup"       : [
+                "SetDefine('../Cfg/Template/lib_cfg.h', 'lib_cfg.h', {'LIB_MEM_CFG_HEAP_SIZE' : '1024u'})"
+            ],
+            "test" : [
+                "builder.ProjectBuild()"
+            ],
+            "validation"  : [
+                "tp = tp and Assert(builder.build_success, True)"
+            ],
+            "on-failure" : [
+                "error_list.append(builder.cmdErr)",
+                "error_list.append(builder.cmdOut)"
+            ]
+        }
+    ]
+}

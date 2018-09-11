@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\libbsp.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\libemqtt.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\librtos.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\test-fdi.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\ywireless-rx111-m1-factory-demo.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>ywireless-rx111-m1-factory-demo - debug</name>
+      <member>
+        <project>libbsp</project>
+        <configuration>debug</configuration>
+      </member>
+      <member>
+        <project>libemqtt</project>
+        <configuration>debug</configuration>
+      </member>
+      <member>
+        <project>librtos</project>
+        <configuration>debug</configuration>
+      </member>
+      <member>
+        <project>ywireless-rx111-m1-factory-demo</project>
+        <configuration>debug</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

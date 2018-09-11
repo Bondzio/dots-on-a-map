@@ -1,0 +1,38 @@
+CC=g++
+CCL=rm
+CFLAGS=\
+-I. \
+-I../../uC-LIB \
+-I../../uC-CPU \
+-I../../uC-CPU/Win32/Visual_Studio \
+-Wall \
+-c
+
+#--analyze -emit-llvm -g3 -Wall -Werror -pedantic
+#-O0 -emit-llvm -g3 -Wall -Wno-ignored-attributes -Werror -fsyntax-only
+
+
+LDFLAGS=
+LDPOSTFLAGS=
+
+SOURCES=\
+../lib_ascii.c \
+../lib_math.c \
+../lib_mem.c \
+../lib_str.c
+
+
+OBJECTS=$(SOURCES:.c=.o)
+EXECUTABLE=hello
+
+all: $(SOURCES) $(EXECUTABLE)
+
+$(EXECUTABLE): $(OBJECTS)
+	$(CCL) $(LDFLAGS) $(OBJECTS) $(LDPOSTFLAGS)
+
+%.o: %.c
+	$(CC) $(CFLAGS) $< -o $@
+
+clean:
+	rm $(OBJECTS) \
+    rm -rf *.o

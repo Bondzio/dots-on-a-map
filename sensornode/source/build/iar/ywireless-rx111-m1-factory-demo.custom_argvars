@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<iarUserArgVars>
+  <group active="true" name="App">
+    <variable>
+      <name>MICRIUM_ROOT</name>
+      <value>$PROJ_DIR$\..\..\Micrium</value>
+    </variable>
+    <variable>
+      <name>MICRIUM_BSP_ROOT</name>
+      <value>$MICRIUM_ROOT$\bsp\renesas\ywireless-rx111</value>
+    </variable>
+    <variable>
+      <name>MICRIUM_CFG_DIR</name>
+      <value>$MICRIUM_ROOT$\cfg</value>
+    </variable>
+    <variable>
+      <name>APP_ROOT</name>
+      <value>$PROJ_DIR$\..\..</value>
+    </variable>
+    <variable>
+      <name>SYSROOT</name>
+      <value>$PROJ_DIR$\..\..\RTOS</value>
+    </variable>
+  </group>
+</iarUserArgVars>
+
+

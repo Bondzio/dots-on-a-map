@@ -1,0 +1,13 @@
+<!-- uC/USB-Device CDC ACM component XML file for ConfigBuilder -->
+<!-- Author: CM -->
+
+<xs:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns:xs="http://xml.micrium.com/schema/component">
+	<!-- Components: Class - CDC ACM -->
+	<component id="com.micrium.ucusbd.class.cdc.acm" name="CDC ACM" type="component">
+		<description> uC/USB-Device CDC ACM Class </description>
+		<sourceDir  needIncludePath="true">../</sourceDir>
+		<sourceDir  needIncludePath="true">.</sourceDir>
+	</component>	
+</xs:root>
+   

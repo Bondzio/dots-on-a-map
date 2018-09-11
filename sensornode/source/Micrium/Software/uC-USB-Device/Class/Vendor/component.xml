@@ -1,0 +1,12 @@
+<!-- uC/USB-Device Vendor class component XML file for ConfigBuilder -->
+<!-- Author: CM -->
+
+<xs:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns:xs="http://xml.micrium.com/schema/component">
+	<!-- Components: Class - Vendor Class -->
+	<component id="com.micrium.ucusbd.class.vendor" name="Vendor" type="component">
+		<description> uC/USB-Device Vendor Class </description>
+		<sourceDir  needIncludePath="true">.</sourceDir>
+	</component>
+</xs:root>
+   

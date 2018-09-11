@@ -1,0 +1,17 @@
+<!-- uC/USB-Device OS-III port component XML file for ConfigBuilder -->
+<!-- Author: JFD -->
+
+<xs:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns:xs="http://xml.micrium.com/schema/component">
+	
+	<!-- Components: Core - OS ports -->	
+	<component id="com.micrium.ucusbd.osport.ucosiii" name="uC/OS-III" type="component">
+		<description> uC/USB-Device core layer port for uCOS-III real-time kernel</description>
+		<sourceDir  needIncludePath="false">.</sourceDir>
+
+		<requiredComponents>
+			<component multiplicity="1" version="[3.03.01, *)">com.micrium.rtos.osiii</component>
+		</requiredComponents>
+	</component>
+</xs:root>
+   

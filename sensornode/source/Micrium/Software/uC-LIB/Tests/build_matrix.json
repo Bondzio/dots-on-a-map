@@ -1,0 +1,22 @@
+{
+    "title"         : "uC-LIB Configuration Build Tests",
+    "test_sequence" : [
+        {
+            "title"       : "Default Cfg",
+            "number"      : 0,
+            "description" : "Build Test",
+            "setup"       : [
+                "SetDefine('../Cfg/Template/lib_cfg.h', 'lib_cfg.h', lib_cfg_defines)"
+            ],
+            "test" : [
+                "builder.ProjectBuild()"
+            ],
+            "validation"  : [
+                "tp = tp and Assert(builder.build_success, True)"
+            ],
+            "on-failure" : [
+                "error_list.append(builder.cmdErr)"
+            ]
+        }
+    ]
+}

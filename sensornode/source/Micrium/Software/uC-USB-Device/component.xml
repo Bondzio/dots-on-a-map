@@ -1,0 +1,47 @@
+<!-- uC/USB-Device CORE component XML file for ConfigBuilder -->
+<!-- Author: JFD -->
+
+<xs:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns:xs="http://xml.micrium.com/schema/component">
+		 
+	<component id="com.micrium.ucusbd" name="µC/USB-Device" type="product" productFolder="uC-USB-Device-V4">
+		<description> An Embedded USB Device stack </description>
+
+		<sourceDir  needIncludePath="true">Source</sourceDir>
+		
+        <sourceDir category="configuration">Cfg/Template
+			<sourceFile>usbd_cfg.h</sourceFile>
+		</sourceDir>
+        
+        <sourceDir category="application">Cfg/Template
+			<sourceFile>usbd_dev_cfg.h</sourceFile>
+            <sourceFile>usbd_dev_cfg.c</sourceFile>
+		</sourceDir>
+        
+		<requiredComponents>
+			<component multiplicity="1"                         >com.micrium.ucusbd.osport.*</component>
+			<component multiplicity="1..*"                      >com.micrium.ucusbd.driver.*</component>
+			<component multiplicity="1..*"                      >com.micrium.ucusbd.class.*</component>
+			<component multiplicity="1" version="[1.37.00,    *]">com.micrium.uclib</component>
+			<component multiplicity="1" version="[1.29.01.01, *]">com.micrium.uccpu</component>
+		</requiredComponents>
+	</component>
+    
+    <!-- Categories under uC/USB-Device in Component Selection View -->
+    <component id="com.micrium.ucusbd.class" name="Classes" type="category" order="1">
+		<description> Classes (Choose at least one) </description>
+	</component>
+
+    <component id="com.micrium.ucusbd.driver" name="Drivers" type="category" order="2">
+		<description> Drivers (Choose at least one) </description>
+	</component>
+
+    <component id="com.micrium.ucusbd.osport" name="OS ports" type="category" order="3">
+		<description> OS ports (Choose one) </description>
+	</component>
+
+	<component id="com.micrium.ucusbd.bsp" name="BSP" type="category" order="4">
+		<description> Board Support Packages </description>
+	</component>
+</xs:root>
+   

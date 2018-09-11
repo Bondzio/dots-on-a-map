@@ -1,0 +1,58 @@
+[Header]
+Description=Renesas Flash Programmer Configuration File (Generic Generation)
+File Type=1.5
+[Device Info]
+Protocol=2 ;Protocol C: Generic Boot devices
+Device Code=7u02
+Product Code=RX100 Series (LittleEndian)
+More Than 128 Erase Blocks=TRUE
+EVB Clock MHz=32.0000
+Write Line Size=0x100
+FLASH ROM Size=0x80000
+User Boot Area Size=0x0
+Supports32LockBit=FALSE
+SupportsUserLocking=FALSE
+SupportsDataLocking=FALSE
+SupportsFlashShield=TRUE
+SupportsProgSizeDF=FALSE
+Data Area Size=0x2000
+Memory Area Count=2
+Erase Block Count=520
+Multi Erase Block Count=2
+[Kernel Info]
+Base Device=Generic BOOT Device
+Protocol=C
+[Valid Clock Modes]
+Clock Modes=0
+[Clock Mode 0]
+CKM=1
+CKP=1
+Crystal Frequency Range=32.00|32.00
+[Memory Area 0]
+Block Name=UA0
+Start Address=0xFFF80000
+Block Size=0x80000
+Area Type=User Flash
+Overlay=0
+Data Unit Size=256
+[Memory Area 1]
+Block Name=DA0
+Start Address=0x00100000
+Block Size=0x2000
+Area Type=Data Flash
+Overlay=0
+Data Unit Size=256
+[Multi Erase Blocks 0]
+Start Address=0xFFF80000
+Block Size=0x400
+Start Block=0
+End Block=511
+Overlay=0
+[Multi Erase Blocks 1]
+Start Address=0x00100000
+Block Size=0x400
+Start Block=512
+End Block=519
+Overlay=0
+[Checksum]
+Checksum=

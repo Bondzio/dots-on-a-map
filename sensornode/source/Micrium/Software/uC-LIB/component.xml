@@ -1,0 +1,18 @@
+<xs:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns:xs="http://xml.micrium.com/schema/component">
+
+	<component id="com.micrium.uclib" name="µC/LIB" type="product" version="1.37.01">
+	
+		<description> Provides clean, organized ANSI C implementations of the most common standard C library functions, macros, and constants. </description>
+	
+		<sourceDir needIncludePath="true">.</sourceDir>
+		<sourceDir category="configuration">Cfg/Template</sourceDir>
+		
+		<requiredComponents>
+			<!-- Basic Processor Port: Optional -->
+			<component multiplicity="1" version="[1.37.00, *]">com.micrium.uccpu</component>
+		</requiredComponents>
+		
+	</component>
+	
+</xs:root>

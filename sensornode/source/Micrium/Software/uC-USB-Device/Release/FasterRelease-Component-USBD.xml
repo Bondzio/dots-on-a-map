@@ -1,0 +1,2100 @@
+<?xml version="1.0" ?>
+<Release Type="Component">
+  <Component ColumnIxSort="2" ColumnOrderSort="2" ProductName="uC/USB-Device" RemapDst="" RemapSrc="">
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/" Comment="uC/USB-Device Core" Enabled="True" InheritedLabel="True" Label="uC/USB-Device V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-USBD-000000-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd/uc-usb-device.git">
+        <File Name=".gitignore" RepoPath=".gitignore" Selected="False"/>
+        <File Name=".gitmodules" RepoPath=".gitmodules" Selected="False"/>
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <Folder Expanded="True" RepoPath="App">
+          <Folder Expanded="False" RepoPath="App/Device">
+            <File Name="app_usbd.c" RepoPath="App/Device/app_usbd.c" Selected="True"/>
+            <File Name="app_usbd.h" RepoPath="App/Device/app_usbd.h" Selected="True"/>
+            <File Name="app_usbd_audio.c" RepoPath="App/Device/app_usbd_audio.c" Selected="False"/>
+            <File Name="app_usbd_cdc.c" RepoPath="App/Device/app_usbd_cdc.c" Selected="False"/>
+            <File Name="app_usbd_cdc_eem.c" RepoPath="App/Device/app_usbd_cdc_eem.c" Selected="False"/>
+            <File Name="app_usbd_cfg.h" RepoPath="App/Device/app_usbd_cfg.h" Selected="True"/>
+            <File Name="app_usbd_hid.c" RepoPath="App/Device/app_usbd_hid.c" Selected="False"/>
+            <File Name="app_usbd_msc.c" RepoPath="App/Device/app_usbd_msc.c" Selected="False"/>
+            <File Name="app_usbd_phdc.c" RepoPath="App/Device/app_usbd_phdc.c" Selected="False"/>
+            <File Name="app_usbd_vendor.c" RepoPath="App/Device/app_usbd_vendor.c" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation.c" RepoPath="App/Device/usbd_audio_drv_simulation.c" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation.h" RepoPath="App/Device/usbd_audio_drv_simulation.h" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation_data.c" RepoPath="App/Device/usbd_audio_drv_simulation_data.c" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Cfg">
+          <Folder Expanded="False" RepoPath="Cfg/Template">
+            <File Name="usbd_audio_dev_cfg.c" RepoPath="Cfg/Template/usbd_audio_dev_cfg.c" Selected="False"/>
+            <File Name="usbd_audio_dev_cfg.h" RepoPath="Cfg/Template/usbd_audio_dev_cfg.h" Selected="False"/>
+            <File Name="usbd_cfg.h" RepoPath="Cfg/Template/usbd_cfg.h" Selected="True"/>
+            <File Name="usbd_dev_cfg.c" RepoPath="Cfg/Template/usbd_dev_cfg.c" Selected="True"/>
+            <File Name="usbd_dev_cfg.h" RepoPath="Cfg/Template/usbd_dev_cfg.h" Selected="True"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Class">
+          <Folder Expanded="False" RepoPath="Class/Audio">
+            <File Name="usbd_audio.c" RepoPath="Class/Audio/usbd_audio.c" Selected="False"/>
+            <File Name="usbd_audio.h" RepoPath="Class/Audio/usbd_audio.h" Selected="False"/>
+            <File Name="usbd_audio_internal.h" RepoPath="Class/Audio/usbd_audio_internal.h" Selected="False"/>
+            <File Name="usbd_audio_os.h" RepoPath="Class/Audio/usbd_audio_os.h" Selected="False"/>
+            <File Name="usbd_audio_processing.c" RepoPath="Class/Audio/usbd_audio_processing.c" Selected="False"/>
+            <File Name="usbd_audio_processing.h" RepoPath="Class/Audio/usbd_audio_processing.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/Audio/Drivers">
+              <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec">
+                <File Name="usbd_audio_drv_uda1380_codec.c" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/usbd_audio_drv_uda1380_codec.c" Selected="False"/>
+                <File Name="usbd_audio_drv_uda1380_codec.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/usbd_audio_drv_uda1380_codec.h" Selected="False"/>
+                <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP">
+                  <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA">
+                    <File Name="uda1380.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380.h" Selected="False"/>
+                    <File Name="uda1380_codec_driver.c" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380_codec_driver.c" Selected="False"/>
+                    <File Name="uda1380_codec_driver.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380_codec_driver.h" Selected="False"/>
+                  </Folder>
+                </Folder>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/Drivers/Template">
+                <File Name="usbd_audio_drv_template.c" RepoPath="Class/Audio/Drivers/Template/usbd_audio_drv_template.c" Selected="False"/>
+                <File Name="usbd_audio_drv_template.h" RepoPath="Class/Audio/Drivers/Template/usbd_audio_drv_template.h" Selected="False"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="Class/Audio/OS">
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/Template">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/Template/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/uCOS-II">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/uCOS-II/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/uCOS-III">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/uCOS-III/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/CDC">
+            <File Name="usbd_cdc.c" RepoPath="Class/CDC/usbd_cdc.c" Selected="False"/>
+            <File Name="usbd_cdc.h" RepoPath="Class/CDC/usbd_cdc.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/CDC/ACM">
+              <File Name="component.xml" RepoPath="Class/CDC/ACM/component.xml" Selected="False"/>
+              <File Name="usbd_acm_serial.c" RepoPath="Class/CDC/ACM/usbd_acm_serial.c" Selected="False"/>
+              <File Name="usbd_acm_serial.h" RepoPath="Class/CDC/ACM/usbd_acm_serial.h" Selected="False"/>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/CDC-EEM">
+            <File Name="usbd_cdc_eem.c" RepoPath="Class/CDC-EEM/usbd_cdc_eem.c" Selected="False"/>
+            <File Name="usbd_cdc_eem.h" RepoPath="Class/CDC-EEM/usbd_cdc_eem.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/HID">
+            <File Name="component.xml" RepoPath="Class/HID/component.xml" Selected="False"/>
+            <File Name="usbd_hid.c" RepoPath="Class/HID/usbd_hid.c" Selected="False"/>
+            <File Name="usbd_hid.h" RepoPath="Class/HID/usbd_hid.h" Selected="False"/>
+            <File Name="usbd_hid_os.h" RepoPath="Class/HID/usbd_hid_os.h" Selected="False"/>
+            <File Name="usbd_hid_report.c" RepoPath="Class/HID/usbd_hid_report.c" Selected="False"/>
+            <File Name="usbd_hid_report.h" RepoPath="Class/HID/usbd_hid_report.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/HID/OS">
+              <Folder Expanded="False" RepoPath="Class/HID/OS/Template">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/Template/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/HID/OS/uCOS-II">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/uCOS-II/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/HID/OS/uCOS-III">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/uCOS-III/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/MSC">
+            <File Name="component.xml" RepoPath="Class/MSC/component.xml" Selected="False"/>
+            <File Name="usbd_msc.c" RepoPath="Class/MSC/usbd_msc.c" Selected="False"/>
+            <File Name="usbd_msc.h" RepoPath="Class/MSC/usbd_msc.h" Selected="False"/>
+            <File Name="usbd_msc_os.h" RepoPath="Class/MSC/usbd_msc_os.h" Selected="False"/>
+            <File Name="usbd_scsi.c" RepoPath="Class/MSC/usbd_scsi.c" Selected="False"/>
+            <File Name="usbd_scsi.h" RepoPath="Class/MSC/usbd_scsi.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/MSC/OS">
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/Template">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/Template/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/uCOS-II">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/uCOS-II/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/uCOS-III">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/uCOS-III/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="Class/MSC/Storage">
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/RAMDisk">
+                <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/RAMDisk/usbd_storage.c" Selected="False"/>
+                <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/RAMDisk/usbd_storage.h" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/Template">
+                <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/Template/usbd_storage.c" Selected="False"/>
+                <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/Template/usbd_storage.h" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/uC-FS">
+                <Folder Expanded="False" RepoPath="Class/MSC/Storage/uC-FS/V4">
+                  <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/uC-FS/V4/usbd_storage.c" Selected="False"/>
+                  <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/uC-FS/V4/usbd_storage.h" Selected="False"/>
+                </Folder>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/PHDC">
+            <File Name="component.xml" RepoPath="Class/PHDC/component.xml" Selected="False"/>
+            <File Name="usbd_phdc.c" RepoPath="Class/PHDC/usbd_phdc.c" Selected="False"/>
+            <File Name="usbd_phdc.h" RepoPath="Class/PHDC/usbd_phdc.h" Selected="False"/>
+            <File Name="usbd_phdc_os.h" RepoPath="Class/PHDC/usbd_phdc_os.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/PHDC/OS">
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/Template">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/Template/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/uCOS-II">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/uCOS-II/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/uCOS-III">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/uCOS-III/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/Vendor">
+            <File Name="component.xml" RepoPath="Class/Vendor/component.xml" Selected="False"/>
+            <File Name="usbd_vendor.c" RepoPath="Class/Vendor/usbd_vendor.c" Selected="False"/>
+            <File Name="usbd_vendor.h" RepoPath="Class/Vendor/usbd_vendor.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Drivers">
+          <Folder Expanded="True" RepoPath="Drivers/Template">
+            <File Name="component.xml" RepoPath="Drivers/Template/component.xml" Selected="False"/>
+            <File Name="usbd_bsp_template.c" RepoPath="Drivers/Template/usbd_bsp_template.c" Selected="True"/>
+            <File Name="usbd_bsp_template.h" RepoPath="Drivers/Template/usbd_bsp_template.h" Selected="True"/>
+            <File Name="usbd_drv_template.c" RepoPath="Drivers/Template/usbd_drv_template.c" Selected="True"/>
+            <File Name="usbd_drv_template.h" RepoPath="Drivers/Template/usbd_drv_template.h" Selected="True"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Drivers/drv_lib">
+            <File Name="usbd_drv_lib.c" RepoPath="Drivers/drv_lib/usbd_drv_lib.c" Selected="True"/>
+            <File Name="usbd_drv_lib.h" RepoPath="Drivers/drv_lib/usbd_drv_lib.h" Selected="True"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="OS">
+          <Folder Expanded="False" RepoPath="OS/Template">
+            <File Name="component.xml" RepoPath="OS/Template/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/Template/usbd_os.c" Selected="True"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="OS/uCOS-II">
+            <File Name="component.xml" RepoPath="OS/uCOS-II/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/uCOS-II/usbd_os.c" Selected="True"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="OS/uCOS-III">
+            <File Name="component.xml" RepoPath="OS/uCOS-III/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/uCOS-III/usbd_os.c" Selected="True"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Release">
+          <File Name="FasterRelease-Component-USBD-AllLayers.xml" RepoPath="Release/FasterRelease-Component-USBD-AllLayers.xml" Selected="False"/>
+          <File Name="FasterRelease-Component-USBD-Renesas.xml" RepoPath="Release/FasterRelease-Component-USBD-Renesas.xml" Selected="False"/>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Source">
+          <File Name="usbd_core.c" RepoPath="Source/usbd_core.c" Selected="True"/>
+          <File Name="usbd_core.h" RepoPath="Source/usbd_core.h" Selected="True"/>
+          <File Name="usbd_ep.c" RepoPath="Source/usbd_ep.c" Selected="True"/>
+          <File Name="usbd_internal.h" RepoPath="Source/usbd_internal.h" Selected="True"/>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/" Comment="uC/USB-Device Class: CDC ACM (Communication Device Class - Abstract Control Model)" Enabled="True" InheritedLabel="True" Label="uC/USB-Device V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-USBD-CDCACX-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd/uc-usb-device.git">
+        <File Name=".gitignore" RepoPath=".gitignore" Selected="False"/>
+        <File Name=".gitmodules" RepoPath=".gitmodules" Selected="False"/>
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <Folder Expanded="True" RepoPath="App">
+          <Folder Expanded="True" RepoPath="App/Device">
+            <File Name="app_usbd.c" RepoPath="App/Device/app_usbd.c" Selected="False"/>
+            <File Name="app_usbd.h" RepoPath="App/Device/app_usbd.h" Selected="False"/>
+            <File Name="app_usbd_audio.c" RepoPath="App/Device/app_usbd_audio.c" Selected="False"/>
+            <File Name="app_usbd_cdc.c" RepoPath="App/Device/app_usbd_cdc.c" Selected="True"/>
+            <File Name="app_usbd_cdc_eem.c" RepoPath="App/Device/app_usbd_cdc_eem.c" Selected="False"/>
+            <File Name="app_usbd_cfg.h" RepoPath="App/Device/app_usbd_cfg.h" Selected="False"/>
+            <File Name="app_usbd_hid.c" RepoPath="App/Device/app_usbd_hid.c" Selected="False"/>
+            <File Name="app_usbd_msc.c" RepoPath="App/Device/app_usbd_msc.c" Selected="False"/>
+            <File Name="app_usbd_phdc.c" RepoPath="App/Device/app_usbd_phdc.c" Selected="False"/>
+            <File Name="app_usbd_vendor.c" RepoPath="App/Device/app_usbd_vendor.c" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation.c" RepoPath="App/Device/usbd_audio_drv_simulation.c" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation.h" RepoPath="App/Device/usbd_audio_drv_simulation.h" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation_data.c" RepoPath="App/Device/usbd_audio_drv_simulation_data.c" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Cfg">
+          <Folder Expanded="False" RepoPath="Cfg/Template">
+            <File Name="usbd_audio_dev_cfg.c" RepoPath="Cfg/Template/usbd_audio_dev_cfg.c" Selected="False"/>
+            <File Name="usbd_audio_dev_cfg.h" RepoPath="Cfg/Template/usbd_audio_dev_cfg.h" Selected="False"/>
+            <File Name="usbd_cfg.h" RepoPath="Cfg/Template/usbd_cfg.h" Selected="False"/>
+            <File Name="usbd_dev_cfg.c" RepoPath="Cfg/Template/usbd_dev_cfg.c" Selected="False"/>
+            <File Name="usbd_dev_cfg.h" RepoPath="Cfg/Template/usbd_dev_cfg.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Class">
+          <Folder Expanded="False" RepoPath="Class/Audio">
+            <File Name="usbd_audio.c" RepoPath="Class/Audio/usbd_audio.c" Selected="False"/>
+            <File Name="usbd_audio.h" RepoPath="Class/Audio/usbd_audio.h" Selected="False"/>
+            <File Name="usbd_audio_internal.h" RepoPath="Class/Audio/usbd_audio_internal.h" Selected="False"/>
+            <File Name="usbd_audio_os.h" RepoPath="Class/Audio/usbd_audio_os.h" Selected="False"/>
+            <File Name="usbd_audio_processing.c" RepoPath="Class/Audio/usbd_audio_processing.c" Selected="False"/>
+            <File Name="usbd_audio_processing.h" RepoPath="Class/Audio/usbd_audio_processing.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/Audio/Drivers">
+              <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec">
+                <File Name="usbd_audio_drv_uda1380_codec.c" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/usbd_audio_drv_uda1380_codec.c" Selected="False"/>
+                <File Name="usbd_audio_drv_uda1380_codec.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/usbd_audio_drv_uda1380_codec.h" Selected="False"/>
+                <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP">
+                  <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA">
+                    <File Name="uda1380.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380.h" Selected="False"/>
+                    <File Name="uda1380_codec_driver.c" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380_codec_driver.c" Selected="False"/>
+                    <File Name="uda1380_codec_driver.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380_codec_driver.h" Selected="False"/>
+                  </Folder>
+                </Folder>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/Drivers/Template">
+                <File Name="usbd_audio_drv_template.c" RepoPath="Class/Audio/Drivers/Template/usbd_audio_drv_template.c" Selected="False"/>
+                <File Name="usbd_audio_drv_template.h" RepoPath="Class/Audio/Drivers/Template/usbd_audio_drv_template.h" Selected="False"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="Class/Audio/OS">
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/Template">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/Template/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/uCOS-II">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/uCOS-II/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/uCOS-III">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/uCOS-III/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/CDC">
+            <File Name="usbd_cdc.c" RepoPath="Class/CDC/usbd_cdc.c" Selected="True"/>
+            <File Name="usbd_cdc.h" RepoPath="Class/CDC/usbd_cdc.h" Selected="True"/>
+            <Folder Expanded="False" RepoPath="Class/CDC/ACM">
+              <File Name="component.xml" RepoPath="Class/CDC/ACM/component.xml" Selected="False"/>
+              <File Name="usbd_acm_serial.c" RepoPath="Class/CDC/ACM/usbd_acm_serial.c" Selected="True"/>
+              <File Name="usbd_acm_serial.h" RepoPath="Class/CDC/ACM/usbd_acm_serial.h" Selected="True"/>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/CDC-EEM">
+            <File Name="usbd_cdc_eem.c" RepoPath="Class/CDC-EEM/usbd_cdc_eem.c" Selected="False"/>
+            <File Name="usbd_cdc_eem.h" RepoPath="Class/CDC-EEM/usbd_cdc_eem.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/HID">
+            <File Name="component.xml" RepoPath="Class/HID/component.xml" Selected="False"/>
+            <File Name="usbd_hid.c" RepoPath="Class/HID/usbd_hid.c" Selected="False"/>
+            <File Name="usbd_hid.h" RepoPath="Class/HID/usbd_hid.h" Selected="False"/>
+            <File Name="usbd_hid_os.h" RepoPath="Class/HID/usbd_hid_os.h" Selected="False"/>
+            <File Name="usbd_hid_report.c" RepoPath="Class/HID/usbd_hid_report.c" Selected="False"/>
+            <File Name="usbd_hid_report.h" RepoPath="Class/HID/usbd_hid_report.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/HID/OS">
+              <Folder Expanded="False" RepoPath="Class/HID/OS/Template">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/Template/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/HID/OS/uCOS-II">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/uCOS-II/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/HID/OS/uCOS-III">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/uCOS-III/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/MSC">
+            <File Name="component.xml" RepoPath="Class/MSC/component.xml" Selected="False"/>
+            <File Name="usbd_msc.c" RepoPath="Class/MSC/usbd_msc.c" Selected="False"/>
+            <File Name="usbd_msc.h" RepoPath="Class/MSC/usbd_msc.h" Selected="False"/>
+            <File Name="usbd_msc_os.h" RepoPath="Class/MSC/usbd_msc_os.h" Selected="False"/>
+            <File Name="usbd_scsi.c" RepoPath="Class/MSC/usbd_scsi.c" Selected="False"/>
+            <File Name="usbd_scsi.h" RepoPath="Class/MSC/usbd_scsi.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/MSC/OS">
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/Template">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/Template/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/uCOS-II">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/uCOS-II/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/uCOS-III">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/uCOS-III/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="Class/MSC/Storage">
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/RAMDisk">
+                <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/RAMDisk/usbd_storage.c" Selected="False"/>
+                <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/RAMDisk/usbd_storage.h" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/Template">
+                <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/Template/usbd_storage.c" Selected="False"/>
+                <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/Template/usbd_storage.h" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/uC-FS">
+                <Folder Expanded="False" RepoPath="Class/MSC/Storage/uC-FS/V4">
+                  <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/uC-FS/V4/usbd_storage.c" Selected="False"/>
+                  <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/uC-FS/V4/usbd_storage.h" Selected="False"/>
+                </Folder>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/PHDC">
+            <File Name="component.xml" RepoPath="Class/PHDC/component.xml" Selected="False"/>
+            <File Name="usbd_phdc.c" RepoPath="Class/PHDC/usbd_phdc.c" Selected="False"/>
+            <File Name="usbd_phdc.h" RepoPath="Class/PHDC/usbd_phdc.h" Selected="False"/>
+            <File Name="usbd_phdc_os.h" RepoPath="Class/PHDC/usbd_phdc_os.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/PHDC/OS">
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/Template">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/Template/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/uCOS-II">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/uCOS-II/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/uCOS-III">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/uCOS-III/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/Vendor">
+            <File Name="component.xml" RepoPath="Class/Vendor/component.xml" Selected="False"/>
+            <File Name="usbd_vendor.c" RepoPath="Class/Vendor/usbd_vendor.c" Selected="False"/>
+            <File Name="usbd_vendor.h" RepoPath="Class/Vendor/usbd_vendor.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Drivers">
+          <Folder Expanded="False" RepoPath="Drivers/Template">
+            <File Name="component.xml" RepoPath="Drivers/Template/component.xml" Selected="False"/>
+            <File Name="usbd_bsp_template.c" RepoPath="Drivers/Template/usbd_bsp_template.c" Selected="False"/>
+            <File Name="usbd_bsp_template.h" RepoPath="Drivers/Template/usbd_bsp_template.h" Selected="False"/>
+            <File Name="usbd_drv_template.c" RepoPath="Drivers/Template/usbd_drv_template.c" Selected="False"/>
+            <File Name="usbd_drv_template.h" RepoPath="Drivers/Template/usbd_drv_template.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Drivers/drv_lib">
+            <File Name="usbd_drv_lib.c" RepoPath="Drivers/drv_lib/usbd_drv_lib.c" Selected="False"/>
+            <File Name="usbd_drv_lib.h" RepoPath="Drivers/drv_lib/usbd_drv_lib.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="OS">
+          <Folder Expanded="False" RepoPath="OS/Template">
+            <File Name="component.xml" RepoPath="OS/Template/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/Template/usbd_os.c" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="OS/uCOS-II">
+            <File Name="component.xml" RepoPath="OS/uCOS-II/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/uCOS-II/usbd_os.c" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="OS/uCOS-III">
+            <File Name="component.xml" RepoPath="OS/uCOS-III/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/uCOS-III/usbd_os.c" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Release">
+          <File Name="FasterRelease-Component-USBD-AllLayers.xml" RepoPath="Release/FasterRelease-Component-USBD-AllLayers.xml" Selected="False"/>
+          <File Name="FasterRelease-Component-USBD-Renesas.xml" RepoPath="Release/FasterRelease-Component-USBD-Renesas.xml" Selected="False"/>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Source">
+          <File Name="usbd_core.c" RepoPath="Source/usbd_core.c" Selected="False"/>
+          <File Name="usbd_core.h" RepoPath="Source/usbd_core.h" Selected="False"/>
+          <File Name="usbd_ep.c" RepoPath="Source/usbd_ep.c" Selected="False"/>
+          <File Name="usbd_internal.h" RepoPath="Source/usbd_internal.h" Selected="False"/>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/" Comment="uC/USB-Device Class: HID (Human Interface Device Class)" Enabled="True" InheritedLabel="True" Label="uC/USB-Device V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-USBD-HIDXXX-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd/uc-usb-device.git">
+        <File Name=".gitignore" RepoPath=".gitignore" Selected="False"/>
+        <File Name=".gitmodules" RepoPath=".gitmodules" Selected="False"/>
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <Folder Expanded="True" RepoPath="App">
+          <Folder Expanded="True" RepoPath="App/Device">
+            <File Name="app_usbd.c" RepoPath="App/Device/app_usbd.c" Selected="False"/>
+            <File Name="app_usbd.h" RepoPath="App/Device/app_usbd.h" Selected="False"/>
+            <File Name="app_usbd_audio.c" RepoPath="App/Device/app_usbd_audio.c" Selected="False"/>
+            <File Name="app_usbd_cdc.c" RepoPath="App/Device/app_usbd_cdc.c" Selected="False"/>
+            <File Name="app_usbd_cdc_eem.c" RepoPath="App/Device/app_usbd_cdc_eem.c" Selected="False"/>
+            <File Name="app_usbd_cfg.h" RepoPath="App/Device/app_usbd_cfg.h" Selected="False"/>
+            <File Name="app_usbd_hid.c" RepoPath="App/Device/app_usbd_hid.c" Selected="True"/>
+            <File Name="app_usbd_msc.c" RepoPath="App/Device/app_usbd_msc.c" Selected="False"/>
+            <File Name="app_usbd_phdc.c" RepoPath="App/Device/app_usbd_phdc.c" Selected="False"/>
+            <File Name="app_usbd_vendor.c" RepoPath="App/Device/app_usbd_vendor.c" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation.c" RepoPath="App/Device/usbd_audio_drv_simulation.c" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation.h" RepoPath="App/Device/usbd_audio_drv_simulation.h" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation_data.c" RepoPath="App/Device/usbd_audio_drv_simulation_data.c" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Cfg">
+          <Folder Expanded="False" RepoPath="Cfg/Template">
+            <File Name="usbd_audio_dev_cfg.c" RepoPath="Cfg/Template/usbd_audio_dev_cfg.c" Selected="False"/>
+            <File Name="usbd_audio_dev_cfg.h" RepoPath="Cfg/Template/usbd_audio_dev_cfg.h" Selected="False"/>
+            <File Name="usbd_cfg.h" RepoPath="Cfg/Template/usbd_cfg.h" Selected="False"/>
+            <File Name="usbd_dev_cfg.c" RepoPath="Cfg/Template/usbd_dev_cfg.c" Selected="False"/>
+            <File Name="usbd_dev_cfg.h" RepoPath="Cfg/Template/usbd_dev_cfg.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Class">
+          <Folder Expanded="False" RepoPath="Class/Audio">
+            <File Name="usbd_audio.c" RepoPath="Class/Audio/usbd_audio.c" Selected="False"/>
+            <File Name="usbd_audio.h" RepoPath="Class/Audio/usbd_audio.h" Selected="False"/>
+            <File Name="usbd_audio_internal.h" RepoPath="Class/Audio/usbd_audio_internal.h" Selected="False"/>
+            <File Name="usbd_audio_os.h" RepoPath="Class/Audio/usbd_audio_os.h" Selected="False"/>
+            <File Name="usbd_audio_processing.c" RepoPath="Class/Audio/usbd_audio_processing.c" Selected="False"/>
+            <File Name="usbd_audio_processing.h" RepoPath="Class/Audio/usbd_audio_processing.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/Audio/Drivers">
+              <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec">
+                <File Name="usbd_audio_drv_uda1380_codec.c" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/usbd_audio_drv_uda1380_codec.c" Selected="False"/>
+                <File Name="usbd_audio_drv_uda1380_codec.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/usbd_audio_drv_uda1380_codec.h" Selected="False"/>
+                <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP">
+                  <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA">
+                    <File Name="uda1380.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380.h" Selected="False"/>
+                    <File Name="uda1380_codec_driver.c" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380_codec_driver.c" Selected="False"/>
+                    <File Name="uda1380_codec_driver.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380_codec_driver.h" Selected="False"/>
+                  </Folder>
+                </Folder>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/Drivers/Template">
+                <File Name="usbd_audio_drv_template.c" RepoPath="Class/Audio/Drivers/Template/usbd_audio_drv_template.c" Selected="False"/>
+                <File Name="usbd_audio_drv_template.h" RepoPath="Class/Audio/Drivers/Template/usbd_audio_drv_template.h" Selected="False"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="Class/Audio/OS">
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/Template">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/Template/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/uCOS-II">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/uCOS-II/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/uCOS-III">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/uCOS-III/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/CDC">
+            <File Name="usbd_cdc.c" RepoPath="Class/CDC/usbd_cdc.c" Selected="False"/>
+            <File Name="usbd_cdc.h" RepoPath="Class/CDC/usbd_cdc.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/CDC/ACM">
+              <File Name="component.xml" RepoPath="Class/CDC/ACM/component.xml" Selected="False"/>
+              <File Name="usbd_acm_serial.c" RepoPath="Class/CDC/ACM/usbd_acm_serial.c" Selected="False"/>
+              <File Name="usbd_acm_serial.h" RepoPath="Class/CDC/ACM/usbd_acm_serial.h" Selected="False"/>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/CDC-EEM">
+            <File Name="usbd_cdc_eem.c" RepoPath="Class/CDC-EEM/usbd_cdc_eem.c" Selected="False"/>
+            <File Name="usbd_cdc_eem.h" RepoPath="Class/CDC-EEM/usbd_cdc_eem.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/HID">
+            <File Name="component.xml" RepoPath="Class/HID/component.xml" Selected="False"/>
+            <File Name="usbd_hid.c" RepoPath="Class/HID/usbd_hid.c" Selected="True"/>
+            <File Name="usbd_hid.h" RepoPath="Class/HID/usbd_hid.h" Selected="True"/>
+            <File Name="usbd_hid_os.h" RepoPath="Class/HID/usbd_hid_os.h" Selected="True"/>
+            <File Name="usbd_hid_report.c" RepoPath="Class/HID/usbd_hid_report.c" Selected="True"/>
+            <File Name="usbd_hid_report.h" RepoPath="Class/HID/usbd_hid_report.h" Selected="True"/>
+            <Folder Expanded="False" RepoPath="Class/HID/OS">
+              <Folder Expanded="False" RepoPath="Class/HID/OS/Template">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/Template/usbd_hid_os.c" Selected="True"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/HID/OS/uCOS-II">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/uCOS-II/usbd_hid_os.c" Selected="True"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/HID/OS/uCOS-III">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/uCOS-III/usbd_hid_os.c" Selected="True"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/MSC">
+            <File Name="component.xml" RepoPath="Class/MSC/component.xml" Selected="False"/>
+            <File Name="usbd_msc.c" RepoPath="Class/MSC/usbd_msc.c" Selected="False"/>
+            <File Name="usbd_msc.h" RepoPath="Class/MSC/usbd_msc.h" Selected="False"/>
+            <File Name="usbd_msc_os.h" RepoPath="Class/MSC/usbd_msc_os.h" Selected="False"/>
+            <File Name="usbd_scsi.c" RepoPath="Class/MSC/usbd_scsi.c" Selected="False"/>
+            <File Name="usbd_scsi.h" RepoPath="Class/MSC/usbd_scsi.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/MSC/OS">
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/Template">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/Template/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/uCOS-II">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/uCOS-II/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/uCOS-III">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/uCOS-III/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="Class/MSC/Storage">
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/RAMDisk">
+                <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/RAMDisk/usbd_storage.c" Selected="False"/>
+                <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/RAMDisk/usbd_storage.h" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/Template">
+                <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/Template/usbd_storage.c" Selected="False"/>
+                <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/Template/usbd_storage.h" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/uC-FS">
+                <Folder Expanded="False" RepoPath="Class/MSC/Storage/uC-FS/V4">
+                  <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/uC-FS/V4/usbd_storage.c" Selected="False"/>
+                  <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/uC-FS/V4/usbd_storage.h" Selected="False"/>
+                </Folder>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/PHDC">
+            <File Name="component.xml" RepoPath="Class/PHDC/component.xml" Selected="False"/>
+            <File Name="usbd_phdc.c" RepoPath="Class/PHDC/usbd_phdc.c" Selected="False"/>
+            <File Name="usbd_phdc.h" RepoPath="Class/PHDC/usbd_phdc.h" Selected="False"/>
+            <File Name="usbd_phdc_os.h" RepoPath="Class/PHDC/usbd_phdc_os.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/PHDC/OS">
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/Template">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/Template/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/uCOS-II">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/uCOS-II/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/uCOS-III">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/uCOS-III/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/Vendor">
+            <File Name="component.xml" RepoPath="Class/Vendor/component.xml" Selected="False"/>
+            <File Name="usbd_vendor.c" RepoPath="Class/Vendor/usbd_vendor.c" Selected="False"/>
+            <File Name="usbd_vendor.h" RepoPath="Class/Vendor/usbd_vendor.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Drivers">
+          <Folder Expanded="False" RepoPath="Drivers/Template">
+            <File Name="component.xml" RepoPath="Drivers/Template/component.xml" Selected="False"/>
+            <File Name="usbd_bsp_template.c" RepoPath="Drivers/Template/usbd_bsp_template.c" Selected="False"/>
+            <File Name="usbd_bsp_template.h" RepoPath="Drivers/Template/usbd_bsp_template.h" Selected="False"/>
+            <File Name="usbd_drv_template.c" RepoPath="Drivers/Template/usbd_drv_template.c" Selected="False"/>
+            <File Name="usbd_drv_template.h" RepoPath="Drivers/Template/usbd_drv_template.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Drivers/drv_lib">
+            <File Name="usbd_drv_lib.c" RepoPath="Drivers/drv_lib/usbd_drv_lib.c" Selected="False"/>
+            <File Name="usbd_drv_lib.h" RepoPath="Drivers/drv_lib/usbd_drv_lib.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="OS">
+          <Folder Expanded="False" RepoPath="OS/Template">
+            <File Name="component.xml" RepoPath="OS/Template/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/Template/usbd_os.c" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="OS/uCOS-II">
+            <File Name="component.xml" RepoPath="OS/uCOS-II/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/uCOS-II/usbd_os.c" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="OS/uCOS-III">
+            <File Name="component.xml" RepoPath="OS/uCOS-III/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/uCOS-III/usbd_os.c" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Release">
+          <File Name="FasterRelease-Component-USBD-AllLayers.xml" RepoPath="Release/FasterRelease-Component-USBD-AllLayers.xml" Selected="False"/>
+          <File Name="FasterRelease-Component-USBD-Renesas.xml" RepoPath="Release/FasterRelease-Component-USBD-Renesas.xml" Selected="False"/>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Source">
+          <File Name="usbd_core.c" RepoPath="Source/usbd_core.c" Selected="False"/>
+          <File Name="usbd_core.h" RepoPath="Source/usbd_core.h" Selected="False"/>
+          <File Name="usbd_ep.c" RepoPath="Source/usbd_ep.c" Selected="False"/>
+          <File Name="usbd_internal.h" RepoPath="Source/usbd_internal.h" Selected="False"/>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/" Comment="uC/USB-Device Class: MSC (Mass Storage Class)" Enabled="True" InheritedLabel="True" Label="uC/USB-Device V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-USBD-MSCXXX-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd/uc-usb-device.git">
+        <File Name=".gitignore" RepoPath=".gitignore" Selected="False"/>
+        <File Name=".gitmodules" RepoPath=".gitmodules" Selected="False"/>
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <Folder Expanded="True" RepoPath="App">
+          <Folder Expanded="True" RepoPath="App/Device">
+            <File Name="app_usbd.c" RepoPath="App/Device/app_usbd.c" Selected="False"/>
+            <File Name="app_usbd.h" RepoPath="App/Device/app_usbd.h" Selected="False"/>
+            <File Name="app_usbd_audio.c" RepoPath="App/Device/app_usbd_audio.c" Selected="False"/>
+            <File Name="app_usbd_cdc.c" RepoPath="App/Device/app_usbd_cdc.c" Selected="False"/>
+            <File Name="app_usbd_cdc_eem.c" RepoPath="App/Device/app_usbd_cdc_eem.c" Selected="False"/>
+            <File Name="app_usbd_cfg.h" RepoPath="App/Device/app_usbd_cfg.h" Selected="False"/>
+            <File Name="app_usbd_hid.c" RepoPath="App/Device/app_usbd_hid.c" Selected="False"/>
+            <File Name="app_usbd_msc.c" RepoPath="App/Device/app_usbd_msc.c" Selected="True"/>
+            <File Name="app_usbd_phdc.c" RepoPath="App/Device/app_usbd_phdc.c" Selected="False"/>
+            <File Name="app_usbd_vendor.c" RepoPath="App/Device/app_usbd_vendor.c" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation.c" RepoPath="App/Device/usbd_audio_drv_simulation.c" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation.h" RepoPath="App/Device/usbd_audio_drv_simulation.h" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation_data.c" RepoPath="App/Device/usbd_audio_drv_simulation_data.c" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Cfg">
+          <Folder Expanded="False" RepoPath="Cfg/Template">
+            <File Name="usbd_audio_dev_cfg.c" RepoPath="Cfg/Template/usbd_audio_dev_cfg.c" Selected="False"/>
+            <File Name="usbd_audio_dev_cfg.h" RepoPath="Cfg/Template/usbd_audio_dev_cfg.h" Selected="False"/>
+            <File Name="usbd_cfg.h" RepoPath="Cfg/Template/usbd_cfg.h" Selected="False"/>
+            <File Name="usbd_dev_cfg.c" RepoPath="Cfg/Template/usbd_dev_cfg.c" Selected="False"/>
+            <File Name="usbd_dev_cfg.h" RepoPath="Cfg/Template/usbd_dev_cfg.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Class">
+          <Folder Expanded="False" RepoPath="Class/Audio">
+            <File Name="usbd_audio.c" RepoPath="Class/Audio/usbd_audio.c" Selected="False"/>
+            <File Name="usbd_audio.h" RepoPath="Class/Audio/usbd_audio.h" Selected="False"/>
+            <File Name="usbd_audio_internal.h" RepoPath="Class/Audio/usbd_audio_internal.h" Selected="False"/>
+            <File Name="usbd_audio_os.h" RepoPath="Class/Audio/usbd_audio_os.h" Selected="False"/>
+            <File Name="usbd_audio_processing.c" RepoPath="Class/Audio/usbd_audio_processing.c" Selected="False"/>
+            <File Name="usbd_audio_processing.h" RepoPath="Class/Audio/usbd_audio_processing.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/Audio/Drivers">
+              <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec">
+                <File Name="usbd_audio_drv_uda1380_codec.c" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/usbd_audio_drv_uda1380_codec.c" Selected="False"/>
+                <File Name="usbd_audio_drv_uda1380_codec.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/usbd_audio_drv_uda1380_codec.h" Selected="False"/>
+                <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP">
+                  <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA">
+                    <File Name="uda1380.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380.h" Selected="False"/>
+                    <File Name="uda1380_codec_driver.c" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380_codec_driver.c" Selected="False"/>
+                    <File Name="uda1380_codec_driver.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380_codec_driver.h" Selected="False"/>
+                  </Folder>
+                </Folder>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/Drivers/Template">
+                <File Name="usbd_audio_drv_template.c" RepoPath="Class/Audio/Drivers/Template/usbd_audio_drv_template.c" Selected="False"/>
+                <File Name="usbd_audio_drv_template.h" RepoPath="Class/Audio/Drivers/Template/usbd_audio_drv_template.h" Selected="False"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="Class/Audio/OS">
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/Template">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/Template/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/uCOS-II">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/uCOS-II/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/uCOS-III">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/uCOS-III/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/CDC">
+            <File Name="usbd_cdc.c" RepoPath="Class/CDC/usbd_cdc.c" Selected="False"/>
+            <File Name="usbd_cdc.h" RepoPath="Class/CDC/usbd_cdc.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/CDC/ACM">
+              <File Name="component.xml" RepoPath="Class/CDC/ACM/component.xml" Selected="False"/>
+              <File Name="usbd_acm_serial.c" RepoPath="Class/CDC/ACM/usbd_acm_serial.c" Selected="False"/>
+              <File Name="usbd_acm_serial.h" RepoPath="Class/CDC/ACM/usbd_acm_serial.h" Selected="False"/>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/CDC-EEM">
+            <File Name="usbd_cdc_eem.c" RepoPath="Class/CDC-EEM/usbd_cdc_eem.c" Selected="False"/>
+            <File Name="usbd_cdc_eem.h" RepoPath="Class/CDC-EEM/usbd_cdc_eem.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/HID">
+            <File Name="component.xml" RepoPath="Class/HID/component.xml" Selected="False"/>
+            <File Name="usbd_hid.c" RepoPath="Class/HID/usbd_hid.c" Selected="False"/>
+            <File Name="usbd_hid.h" RepoPath="Class/HID/usbd_hid.h" Selected="False"/>
+            <File Name="usbd_hid_os.h" RepoPath="Class/HID/usbd_hid_os.h" Selected="False"/>
+            <File Name="usbd_hid_report.c" RepoPath="Class/HID/usbd_hid_report.c" Selected="False"/>
+            <File Name="usbd_hid_report.h" RepoPath="Class/HID/usbd_hid_report.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/HID/OS">
+              <Folder Expanded="False" RepoPath="Class/HID/OS/Template">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/Template/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/HID/OS/uCOS-II">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/uCOS-II/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/HID/OS/uCOS-III">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/uCOS-III/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/MSC">
+            <File Name="component.xml" RepoPath="Class/MSC/component.xml" Selected="False"/>
+            <File Name="usbd_msc.c" RepoPath="Class/MSC/usbd_msc.c" Selected="True"/>
+            <File Name="usbd_msc.h" RepoPath="Class/MSC/usbd_msc.h" Selected="True"/>
+            <File Name="usbd_msc_os.h" RepoPath="Class/MSC/usbd_msc_os.h" Selected="True"/>
+            <File Name="usbd_scsi.c" RepoPath="Class/MSC/usbd_scsi.c" Selected="True"/>
+            <File Name="usbd_scsi.h" RepoPath="Class/MSC/usbd_scsi.h" Selected="True"/>
+            <Folder Expanded="False" RepoPath="Class/MSC/OS">
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/Template">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/Template/usbd_msc_os.c" Selected="True"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/uCOS-II">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/uCOS-II/usbd_msc_os.c" Selected="True"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/uCOS-III">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/uCOS-III/usbd_msc_os.c" Selected="True"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="Class/MSC/Storage">
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/RAMDisk">
+                <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/RAMDisk/usbd_storage.c" Selected="True"/>
+                <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/RAMDisk/usbd_storage.h" Selected="True"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/Template">
+                <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/Template/usbd_storage.c" Selected="True"/>
+                <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/Template/usbd_storage.h" Selected="True"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/uC-FS">
+                <Folder Expanded="False" RepoPath="Class/MSC/Storage/uC-FS/V4">
+                  <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/uC-FS/V4/usbd_storage.c" Selected="True"/>
+                  <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/uC-FS/V4/usbd_storage.h" Selected="True"/>
+                </Folder>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/PHDC">
+            <File Name="component.xml" RepoPath="Class/PHDC/component.xml" Selected="False"/>
+            <File Name="usbd_phdc.c" RepoPath="Class/PHDC/usbd_phdc.c" Selected="False"/>
+            <File Name="usbd_phdc.h" RepoPath="Class/PHDC/usbd_phdc.h" Selected="False"/>
+            <File Name="usbd_phdc_os.h" RepoPath="Class/PHDC/usbd_phdc_os.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/PHDC/OS">
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/Template">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/Template/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/uCOS-II">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/uCOS-II/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/uCOS-III">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/uCOS-III/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/Vendor">
+            <File Name="component.xml" RepoPath="Class/Vendor/component.xml" Selected="False"/>
+            <File Name="usbd_vendor.c" RepoPath="Class/Vendor/usbd_vendor.c" Selected="False"/>
+            <File Name="usbd_vendor.h" RepoPath="Class/Vendor/usbd_vendor.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Drivers">
+          <Folder Expanded="False" RepoPath="Drivers/Template">
+            <File Name="component.xml" RepoPath="Drivers/Template/component.xml" Selected="False"/>
+            <File Name="usbd_bsp_template.c" RepoPath="Drivers/Template/usbd_bsp_template.c" Selected="False"/>
+            <File Name="usbd_bsp_template.h" RepoPath="Drivers/Template/usbd_bsp_template.h" Selected="False"/>
+            <File Name="usbd_drv_template.c" RepoPath="Drivers/Template/usbd_drv_template.c" Selected="False"/>
+            <File Name="usbd_drv_template.h" RepoPath="Drivers/Template/usbd_drv_template.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Drivers/drv_lib">
+            <File Name="usbd_drv_lib.c" RepoPath="Drivers/drv_lib/usbd_drv_lib.c" Selected="False"/>
+            <File Name="usbd_drv_lib.h" RepoPath="Drivers/drv_lib/usbd_drv_lib.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="OS">
+          <Folder Expanded="False" RepoPath="OS/Template">
+            <File Name="component.xml" RepoPath="OS/Template/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/Template/usbd_os.c" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="OS/uCOS-II">
+            <File Name="component.xml" RepoPath="OS/uCOS-II/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/uCOS-II/usbd_os.c" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="OS/uCOS-III">
+            <File Name="component.xml" RepoPath="OS/uCOS-III/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/uCOS-III/usbd_os.c" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Release">
+          <File Name="FasterRelease-Component-USBD-AllLayers.xml" RepoPath="Release/FasterRelease-Component-USBD-AllLayers.xml" Selected="False"/>
+          <File Name="FasterRelease-Component-USBD-Renesas.xml" RepoPath="Release/FasterRelease-Component-USBD-Renesas.xml" Selected="False"/>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Source">
+          <File Name="usbd_core.c" RepoPath="Source/usbd_core.c" Selected="False"/>
+          <File Name="usbd_core.h" RepoPath="Source/usbd_core.h" Selected="False"/>
+          <File Name="usbd_ep.c" RepoPath="Source/usbd_ep.c" Selected="False"/>
+          <File Name="usbd_internal.h" RepoPath="Source/usbd_internal.h" Selected="False"/>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/" Comment="uC/USB-Device Vendor Class: Windows driver source code" Enabled="True" InheritedLabel="True" Label="uC/USB-Device V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-USBD-UWKMDS-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd/usbd-app-host.git">
+        <Folder Expanded="True" RepoPath="OS">
+          <Folder Expanded="True" RepoPath="OS/Windows">
+            <Folder Expanded="False" RepoPath="OS/Windows/CDC">
+              <Folder Expanded="False" RepoPath="OS/Windows/CDC/INF">
+                <File Name="usbser.inf" RepoPath="OS/Windows/CDC/INF/usbser.inf" Selected="False"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="OS/Windows/HID">
+              <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010">
+                <File Name="HID - Control.vcxproj" RepoPath="OS/Windows/HID/Visual Studio 2010/HID - Control.vcxproj" Selected="False"/>
+                <File Name="HID - Interrupt.vcxproj" RepoPath="OS/Windows/HID/Visual Studio 2010/HID - Interrupt.vcxproj" Selected="False"/>
+                <File Name="HID.sln" RepoPath="OS/Windows/HID/Visual Studio 2010/HID.sln" Selected="False"/>
+                <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK">
+                  <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/inc">
+                    <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/inc/api">
+                      <File Name="hidpi.h" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/inc/api/hidpi.h" Selected="False"/>
+                      <File Name="hidsdi.h" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/inc/api/hidsdi.h" Selected="False"/>
+                      <File Name="hidusage.h" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/inc/api/hidusage.h" Selected="False"/>
+                    </Folder>
+                  </Folder>
+                  <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib">
+                    <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/win7">
+                      <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/win7/amd64">
+                        <File Name="hid.lib" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/win7/amd64/hid.lib" Selected="False"/>
+                      </Folder>
+                      <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/win7/i386">
+                        <File Name="hid.lib" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/win7/i386/hid.lib" Selected="False"/>
+                      </Folder>
+                      <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/win7/ia64">
+                        <File Name="hid.lib" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/win7/ia64/hid.lib" Selected="False"/>
+                      </Folder>
+                    </Folder>
+                    <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/wlh">
+                      <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/wlh/amd64">
+                        <File Name="hid.lib" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/wlh/amd64/hid.lib" Selected="False"/>
+                      </Folder>
+                      <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/wlh/i386">
+                        <File Name="hid.lib" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/wlh/i386/hid.lib" Selected="False"/>
+                      </Folder>
+                      <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/wlh/ia64">
+                        <File Name="hid.lib" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/wlh/ia64/hid.lib" Selected="False"/>
+                      </Folder>
+                    </Folder>
+                    <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/wxp">
+                      <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/wxp/i386">
+                        <File Name="hid.lib" RepoPath="OS/Windows/HID/Visual Studio 2010/WinDDK/lib/wxp/i386/hid.lib" Selected="False"/>
+                      </Folder>
+                    </Folder>
+                  </Folder>
+                </Folder>
+                <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010/exe">
+                  <File Name="HID - Control.exe" RepoPath="OS/Windows/HID/Visual Studio 2010/exe/HID - Control.exe" Selected="False"/>
+                  <File Name="HID - Interrupt.exe" RepoPath="OS/Windows/HID/Visual Studio 2010/exe/HID - Interrupt.exe" Selected="False"/>
+                </Folder>
+                <Folder Expanded="False" RepoPath="OS/Windows/HID/Visual Studio 2010/src">
+                  <File Name="app_hid_common.c" RepoPath="OS/Windows/HID/Visual Studio 2010/src/app_hid_common.c" Selected="False"/>
+                  <File Name="app_hid_common.h" RepoPath="OS/Windows/HID/Visual Studio 2010/src/app_hid_common.h" Selected="False"/>
+                  <File Name="app_hid_control.c" RepoPath="OS/Windows/HID/Visual Studio 2010/src/app_hid_control.c" Selected="False"/>
+                  <File Name="app_hid_interrupt.c" RepoPath="OS/Windows/HID/Visual Studio 2010/src/app_hid_interrupt.c" Selected="False"/>
+                </Folder>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="OS/Windows/PHDC">
+              <Folder Expanded="False" RepoPath="OS/Windows/PHDC/INF">
+                <File Name="WinUSB_single.inf" RepoPath="OS/Windows/PHDC/INF/WinUSB_single.inf" Selected="False"/>
+                <Folder Expanded="False" RepoPath="OS/Windows/PHDC/INF/amd64">
+                  <File Name="WdfCoInstaller01009.dll" RepoPath="OS/Windows/PHDC/INF/amd64/WdfCoInstaller01009.dll" Selected="False"/>
+                  <File Name="winusbcoinstaller2.dll" RepoPath="OS/Windows/PHDC/INF/amd64/winusbcoinstaller2.dll" Selected="False"/>
+                </Folder>
+                <Folder Expanded="False" RepoPath="OS/Windows/PHDC/INF/ia64">
+                  <File Name="WdfCoInstaller01009.dll" RepoPath="OS/Windows/PHDC/INF/ia64/WdfCoInstaller01009.dll" Selected="False"/>
+                  <File Name="winusbcoinstaller2.dll" RepoPath="OS/Windows/PHDC/INF/ia64/winusbcoinstaller2.dll" Selected="False"/>
+                </Folder>
+                <Folder Expanded="False" RepoPath="OS/Windows/PHDC/INF/x86">
+                  <File Name="WdfCoInstaller01009.dll" RepoPath="OS/Windows/PHDC/INF/x86/WdfCoInstaller01009.dll" Selected="False"/>
+                  <File Name="winusbcoinstaller2.dll" RepoPath="OS/Windows/PHDC/INF/x86/winusbcoinstaller2.dll" Selected="False"/>
+                </Folder>
+              </Folder>
+              <Folder Expanded="False" RepoPath="OS/Windows/PHDC/Visual Studio 2010">
+                <File Name="PHDC.sln" RepoPath="OS/Windows/PHDC/Visual Studio 2010/PHDC.sln" Selected="False"/>
+                <File Name="PHDC.vcxproj" RepoPath="OS/Windows/PHDC/Visual Studio 2010/PHDC.vcxproj" Selected="False"/>
+                <Folder Expanded="False" RepoPath="OS/Windows/PHDC/Visual Studio 2010/exe">
+                  <File Name="PHDC.exe" RepoPath="OS/Windows/PHDC/Visual Studio 2010/exe/PHDC.exe" Selected="False"/>
+                  <File Name="USBDev_API.dll" RepoPath="OS/Windows/PHDC/Visual Studio 2010/exe/USBDev_API.dll" Selected="False"/>
+                </Folder>
+                <Folder Expanded="False" RepoPath="OS/Windows/PHDC/Visual Studio 2010/src">
+                  <File Name="app_phdc.c" RepoPath="OS/Windows/PHDC/Visual Studio 2010/src/app_phdc.c" Selected="False"/>
+                  <File Name="usbdev_api.h" RepoPath="OS/Windows/PHDC/Visual Studio 2010/src/usbdev_api.h" Selected="False"/>
+                  <File Name="usbdev_guid.h" RepoPath="OS/Windows/PHDC/Visual Studio 2010/src/usbdev_guid.h" Selected="False"/>
+                </Folder>
+              </Folder>
+            </Folder>
+            <Folder Expanded="True" RepoPath="OS/Windows/USBDev_API">
+              <File Name="USBDev_API.sln" RepoPath="OS/Windows/USBDev_API/USBDev_API.sln" Selected="True"/>
+              <File Name="USBDev_API.vcxproj" RepoPath="OS/Windows/USBDev_API/USBDev_API.vcxproj" Selected="True"/>
+              <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/Test">
+                <File Name="Vendor_test.sln" RepoPath="OS/Windows/USBDev_API/Test/Vendor_test.sln" Selected="False"/>
+                <File Name="Vendor_test.vcxproj" RepoPath="OS/Windows/USBDev_API/Test/Vendor_test.vcxproj" Selected="False"/>
+                <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/Test/src">
+                  <File Name="app_vendor_test.c" RepoPath="OS/Windows/USBDev_API/Test/src/app_vendor_test.c" Selected="False"/>
+                  <File Name="usbdev_api.h" RepoPath="OS/Windows/USBDev_API/Test/src/usbdev_api.h" Selected="False"/>
+                  <File Name="usbdev_guid.h" RepoPath="OS/Windows/USBDev_API/Test/src/usbdev_guid.h" Selected="False"/>
+                </Folder>
+              </Folder>
+              <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK">
+                <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/inc">
+                  <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/inc/api">
+                    <File Name="setupapi.h" RepoPath="OS/Windows/USBDev_API/WinDDK/inc/api/setupapi.h" Selected="True"/>
+                    <File Name="usb.h" RepoPath="OS/Windows/USBDev_API/WinDDK/inc/api/usb.h" Selected="True"/>
+                    <File Name="usb100.h" RepoPath="OS/Windows/USBDev_API/WinDDK/inc/api/usb100.h" Selected="True"/>
+                    <File Name="usb200.h" RepoPath="OS/Windows/USBDev_API/WinDDK/inc/api/usb200.h" Selected="True"/>
+                  </Folder>
+                  <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/inc/ddk">
+                    <File Name="winusb.h" RepoPath="OS/Windows/USBDev_API/WinDDK/inc/ddk/winusb.h" Selected="True"/>
+                    <File Name="winusbio.h" RepoPath="OS/Windows/USBDev_API/WinDDK/inc/ddk/winusbio.h" Selected="True"/>
+                  </Folder>
+                </Folder>
+                <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/lib">
+                  <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/win7">
+                    <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/win7/amd64">
+                      <File Name="setupapi.lib" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/win7/amd64/setupapi.lib" Selected="True"/>
+                      <File Name="winusb.lib" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/win7/amd64/winusb.lib" Selected="True"/>
+                    </Folder>
+                    <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/win7/i386">
+                      <File Name="setupapi.lib" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/win7/i386/setupapi.lib" Selected="True"/>
+                      <File Name="winusb.lib" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/win7/i386/winusb.lib" Selected="True"/>
+                    </Folder>
+                    <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/win7/ia64">
+                      <File Name="setupapi.lib" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/win7/ia64/setupapi.lib" Selected="True"/>
+                      <File Name="winusb.lib" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/win7/ia64/winusb.lib" Selected="True"/>
+                    </Folder>
+                  </Folder>
+                  <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/wlh">
+                    <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/wlh/amd64">
+                      <File Name="setupapi.lib" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/wlh/amd64/setupapi.lib" Selected="True"/>
+                      <File Name="winusb.lib" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/wlh/amd64/winusb.lib" Selected="True"/>
+                    </Folder>
+                    <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/wlh/i386">
+                      <File Name="setupapi.lib" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/wlh/i386/setupapi.lib" Selected="True"/>
+                      <File Name="winusb.lib" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/wlh/i386/winusb.lib" Selected="True"/>
+                    </Folder>
+                    <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/wlh/ia64">
+                      <File Name="setupapi.lib" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/wlh/ia64/setupapi.lib" Selected="True"/>
+                      <File Name="winusb.lib" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/wlh/ia64/winusb.lib" Selected="True"/>
+                    </Folder>
+                  </Folder>
+                  <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/wxp">
+                    <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/wxp/i386">
+                      <File Name="setupapi.lib" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/wxp/i386/setupapi.lib" Selected="True"/>
+                      <File Name="winusb.lib" RepoPath="OS/Windows/USBDev_API/WinDDK/lib/wxp/i386/winusb.lib" Selected="True"/>
+                    </Folder>
+                  </Folder>
+                </Folder>
+                <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/redist">
+                  <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/wdf">
+                    <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/wdf/amd64">
+                      <File Name="WUDFUpdate_01009.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/wdf/amd64/WUDFUpdate_01009.dll" Selected="True"/>
+                      <File Name="WUDFUpdate_01009_chk.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/wdf/amd64/WUDFUpdate_01009_chk.dll" Selected="True"/>
+                      <File Name="WdfCoInstaller01009.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/wdf/amd64/WdfCoInstaller01009.dll" Selected="True"/>
+                      <File Name="WdfCoInstaller01009_chk.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/wdf/amd64/WdfCoInstaller01009_chk.dll" Selected="True"/>
+                    </Folder>
+                    <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/wdf/ia64">
+                      <File Name="WUDFUpdate_01009.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/wdf/ia64/WUDFUpdate_01009.dll" Selected="True"/>
+                      <File Name="WUDFUpdate_01009_chk.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/wdf/ia64/WUDFUpdate_01009_chk.dll" Selected="True"/>
+                      <File Name="WdfCoInstaller01009.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/wdf/ia64/WdfCoInstaller01009.dll" Selected="True"/>
+                      <File Name="WdfCoInstaller01009_chk.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/wdf/ia64/WdfCoInstaller01009_chk.dll" Selected="True"/>
+                    </Folder>
+                    <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/wdf/x86">
+                      <File Name="WUDFUpdate_01009.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/wdf/x86/WUDFUpdate_01009.dll" Selected="True"/>
+                      <File Name="WUDFUpdate_01009_chk.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/wdf/x86/WUDFUpdate_01009_chk.dll" Selected="True"/>
+                      <File Name="WdfCoInstaller01009.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/wdf/x86/WdfCoInstaller01009.dll" Selected="True"/>
+                      <File Name="WdfCoInstaller01009_chk.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/wdf/x86/WdfCoInstaller01009_chk.dll" Selected="True"/>
+                    </Folder>
+                  </Folder>
+                  <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/winusb">
+                    <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/winusb/amd64">
+                      <File Name="winusbcoinstaller2.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/winusb/amd64/winusbcoinstaller2.dll" Selected="True"/>
+                      <File Name="winusbcoinstaller2_chk.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/winusb/amd64/winusbcoinstaller2_chk.dll" Selected="True"/>
+                    </Folder>
+                    <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/winusb/ia64">
+                      <File Name="winusbcoinstaller2.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/winusb/ia64/winusbcoinstaller2.dll" Selected="True"/>
+                      <File Name="winusbcoinstaller2_chk.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/winusb/ia64/winusbcoinstaller2_chk.dll" Selected="True"/>
+                    </Folder>
+                    <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/winusb/x86">
+                      <File Name="winusbcoinstaller2.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/winusb/x86/winusbcoinstaller2.dll" Selected="True"/>
+                      <File Name="winusbcoinstaller2_chk.dll" RepoPath="OS/Windows/USBDev_API/WinDDK/redist/winusb/x86/winusbcoinstaller2_chk.dll" Selected="True"/>
+                    </Folder>
+                  </Folder>
+                </Folder>
+              </Folder>
+              <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/lib">
+                <Folder Expanded="True" RepoPath="OS/Windows/USBDev_API/lib/x86">
+                  <File Name="USBDev_API.dll" RepoPath="OS/Windows/USBDev_API/lib/x86/USBDev_API.dll" Selected="True"/>
+                  <File Name="USBDev_API.lib" RepoPath="OS/Windows/USBDev_API/lib/x86/USBDev_API.lib" Selected="True"/>
+                  <File Name="USBDev_API.pdb" RepoPath="OS/Windows/USBDev_API/lib/x86/USBDev_API.pdb" Selected="True"/>
+                </Folder>
+              </Folder>
+              <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/redist">
+                <Folder Expanded="True" RepoPath="OS/Windows/USBDev_API/redist/x86">
+                  <File Name="USBDev_API.dll" RepoPath="OS/Windows/USBDev_API/redist/x86/USBDev_API.dll" Selected="True"/>
+                  <File Name="USBDev_API.lib" RepoPath="OS/Windows/USBDev_API/redist/x86/USBDev_API.lib" Selected="True"/>
+                </Folder>
+              </Folder>
+              <Folder Expanded="False" RepoPath="OS/Windows/USBDev_API/src">
+                <File Name="usbdev_api.c" RepoPath="OS/Windows/USBDev_API/src/usbdev_api.c" Selected="True"/>
+                <File Name="usbdev_api.h" RepoPath="OS/Windows/USBDev_API/src/usbdev_api.h" Selected="True"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="OS/Windows/Vendor">
+              <Folder Expanded="False" RepoPath="OS/Windows/Vendor/INF">
+                <File Name="WinUSB_composite.inf" RepoPath="OS/Windows/Vendor/INF/WinUSB_composite.inf" Selected="False"/>
+                <File Name="WinUSB_single.inf" RepoPath="OS/Windows/Vendor/INF/WinUSB_single.inf" Selected="False"/>
+                <Folder Expanded="False" RepoPath="OS/Windows/Vendor/INF/amd64">
+                  <File Name="WdfCoInstaller01009.dll" RepoPath="OS/Windows/Vendor/INF/amd64/WdfCoInstaller01009.dll" Selected="False"/>
+                  <File Name="winusbcoinstaller2.dll" RepoPath="OS/Windows/Vendor/INF/amd64/winusbcoinstaller2.dll" Selected="False"/>
+                </Folder>
+                <Folder Expanded="False" RepoPath="OS/Windows/Vendor/INF/ia64">
+                  <File Name="WdfCoInstaller01009.dll" RepoPath="OS/Windows/Vendor/INF/ia64/WdfCoInstaller01009.dll" Selected="False"/>
+                  <File Name="winusbcoinstaller2.dll" RepoPath="OS/Windows/Vendor/INF/ia64/winusbcoinstaller2.dll" Selected="False"/>
+                </Folder>
+                <Folder Expanded="False" RepoPath="OS/Windows/Vendor/INF/x86">
+                  <File Name="WdfCoInstaller01009.dll" RepoPath="OS/Windows/Vendor/INF/x86/WdfCoInstaller01009.dll" Selected="False"/>
+                  <File Name="winusbcoinstaller2.dll" RepoPath="OS/Windows/Vendor/INF/x86/winusbcoinstaller2.dll" Selected="False"/>
+                </Folder>
+              </Folder>
+              <Folder Expanded="False" RepoPath="OS/Windows/Vendor/Visual Studio 2010">
+                <File Name="Echo.vcxproj" RepoPath="OS/Windows/Vendor/Visual Studio 2010/Echo.vcxproj" Selected="False"/>
+                <File Name="Vendor.sln" RepoPath="OS/Windows/Vendor/Visual Studio 2010/Vendor.sln" Selected="False"/>
+                <Folder Expanded="True" RepoPath="OS/Windows/Vendor/Visual Studio 2010/exe">
+                  <Folder Expanded="False" RepoPath="OS/Windows/Vendor/Visual Studio 2010/exe/x86">
+                    <File Name="EchoAsync.exe" RepoPath="OS/Windows/Vendor/Visual Studio 2010/exe/x86/EchoAsync.exe" Selected="False"/>
+                    <File Name="EchoSync.exe" RepoPath="OS/Windows/Vendor/Visual Studio 2010/exe/x86/EchoSync.exe" Selected="False"/>
+                    <File Name="USBDev_API.dll" RepoPath="OS/Windows/Vendor/Visual Studio 2010/exe/x86/USBDev_API.dll" Selected="False"/>
+                  </Folder>
+                </Folder>
+                <Folder Expanded="False" RepoPath="OS/Windows/Vendor/Visual Studio 2010/src">
+                  <File Name="app_vendor_echo.c" RepoPath="OS/Windows/Vendor/Visual Studio 2010/src/app_vendor_echo.c" Selected="False"/>
+                  <File Name="usbdev_api.h" RepoPath="OS/Windows/Vendor/Visual Studio 2010/src/usbdev_api.h" Selected="False"/>
+                  <File Name="usbdev_guid.h" RepoPath="OS/Windows/Vendor/Visual Studio 2010/src/usbdev_guid.h" Selected="False"/>
+                </Folder>
+              </Folder>
+            </Folder>
+          </Folder>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/" Comment="uC/USB-Device Class: Vendor" Enabled="True" InheritedLabel="True" Label="uC/USB-Device V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-USBD-VENDOR-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd/uc-usb-device.git">
+        <File Name=".gitignore" RepoPath=".gitignore" Selected="False"/>
+        <File Name=".gitmodules" RepoPath=".gitmodules" Selected="False"/>
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <Folder Expanded="True" RepoPath="App">
+          <Folder Expanded="False" RepoPath="App/Device">
+            <File Name="app_usbd.c" RepoPath="App/Device/app_usbd.c" Selected="False"/>
+            <File Name="app_usbd.h" RepoPath="App/Device/app_usbd.h" Selected="False"/>
+            <File Name="app_usbd_audio.c" RepoPath="App/Device/app_usbd_audio.c" Selected="False"/>
+            <File Name="app_usbd_cdc.c" RepoPath="App/Device/app_usbd_cdc.c" Selected="False"/>
+            <File Name="app_usbd_cdc_eem.c" RepoPath="App/Device/app_usbd_cdc_eem.c" Selected="False"/>
+            <File Name="app_usbd_cfg.h" RepoPath="App/Device/app_usbd_cfg.h" Selected="False"/>
+            <File Name="app_usbd_hid.c" RepoPath="App/Device/app_usbd_hid.c" Selected="False"/>
+            <File Name="app_usbd_msc.c" RepoPath="App/Device/app_usbd_msc.c" Selected="False"/>
+            <File Name="app_usbd_phdc.c" RepoPath="App/Device/app_usbd_phdc.c" Selected="False"/>
+            <File Name="app_usbd_vendor.c" RepoPath="App/Device/app_usbd_vendor.c" Selected="True"/>
+            <File Name="usbd_audio_drv_simulation.c" RepoPath="App/Device/usbd_audio_drv_simulation.c" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation.h" RepoPath="App/Device/usbd_audio_drv_simulation.h" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation_data.c" RepoPath="App/Device/usbd_audio_drv_simulation_data.c" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Cfg">
+          <Folder Expanded="False" RepoPath="Cfg/Template">
+            <File Name="usbd_audio_dev_cfg.c" RepoPath="Cfg/Template/usbd_audio_dev_cfg.c" Selected="False"/>
+            <File Name="usbd_audio_dev_cfg.h" RepoPath="Cfg/Template/usbd_audio_dev_cfg.h" Selected="False"/>
+            <File Name="usbd_cfg.h" RepoPath="Cfg/Template/usbd_cfg.h" Selected="False"/>
+            <File Name="usbd_dev_cfg.c" RepoPath="Cfg/Template/usbd_dev_cfg.c" Selected="False"/>
+            <File Name="usbd_dev_cfg.h" RepoPath="Cfg/Template/usbd_dev_cfg.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Class">
+          <Folder Expanded="False" RepoPath="Class/Audio">
+            <File Name="usbd_audio.c" RepoPath="Class/Audio/usbd_audio.c" Selected="False"/>
+            <File Name="usbd_audio.h" RepoPath="Class/Audio/usbd_audio.h" Selected="False"/>
+            <File Name="usbd_audio_internal.h" RepoPath="Class/Audio/usbd_audio_internal.h" Selected="False"/>
+            <File Name="usbd_audio_os.h" RepoPath="Class/Audio/usbd_audio_os.h" Selected="False"/>
+            <File Name="usbd_audio_processing.c" RepoPath="Class/Audio/usbd_audio_processing.c" Selected="False"/>
+            <File Name="usbd_audio_processing.h" RepoPath="Class/Audio/usbd_audio_processing.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/Audio/Drivers">
+              <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec">
+                <File Name="usbd_audio_drv_uda1380_codec.c" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/usbd_audio_drv_uda1380_codec.c" Selected="False"/>
+                <File Name="usbd_audio_drv_uda1380_codec.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/usbd_audio_drv_uda1380_codec.h" Selected="False"/>
+                <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP">
+                  <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA">
+                    <File Name="uda1380.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380.h" Selected="False"/>
+                    <File Name="uda1380_codec_driver.c" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380_codec_driver.c" Selected="False"/>
+                    <File Name="uda1380_codec_driver.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380_codec_driver.h" Selected="False"/>
+                  </Folder>
+                </Folder>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/Drivers/Template">
+                <File Name="usbd_audio_drv_template.c" RepoPath="Class/Audio/Drivers/Template/usbd_audio_drv_template.c" Selected="False"/>
+                <File Name="usbd_audio_drv_template.h" RepoPath="Class/Audio/Drivers/Template/usbd_audio_drv_template.h" Selected="False"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="Class/Audio/OS">
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/Template">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/Template/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/uCOS-II">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/uCOS-II/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/uCOS-III">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/uCOS-III/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/CDC">
+            <File Name="usbd_cdc.c" RepoPath="Class/CDC/usbd_cdc.c" Selected="False"/>
+            <File Name="usbd_cdc.h" RepoPath="Class/CDC/usbd_cdc.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/CDC/ACM">
+              <File Name="component.xml" RepoPath="Class/CDC/ACM/component.xml" Selected="False"/>
+              <File Name="usbd_acm_serial.c" RepoPath="Class/CDC/ACM/usbd_acm_serial.c" Selected="False"/>
+              <File Name="usbd_acm_serial.h" RepoPath="Class/CDC/ACM/usbd_acm_serial.h" Selected="False"/>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/CDC-EEM">
+            <File Name="usbd_cdc_eem.c" RepoPath="Class/CDC-EEM/usbd_cdc_eem.c" Selected="False"/>
+            <File Name="usbd_cdc_eem.h" RepoPath="Class/CDC-EEM/usbd_cdc_eem.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/HID">
+            <File Name="component.xml" RepoPath="Class/HID/component.xml" Selected="False"/>
+            <File Name="usbd_hid.c" RepoPath="Class/HID/usbd_hid.c" Selected="False"/>
+            <File Name="usbd_hid.h" RepoPath="Class/HID/usbd_hid.h" Selected="False"/>
+            <File Name="usbd_hid_os.h" RepoPath="Class/HID/usbd_hid_os.h" Selected="False"/>
+            <File Name="usbd_hid_report.c" RepoPath="Class/HID/usbd_hid_report.c" Selected="False"/>
+            <File Name="usbd_hid_report.h" RepoPath="Class/HID/usbd_hid_report.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/HID/OS">
+              <Folder Expanded="False" RepoPath="Class/HID/OS/Template">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/Template/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/HID/OS/uCOS-II">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/uCOS-II/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/HID/OS/uCOS-III">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/uCOS-III/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/MSC">
+            <File Name="component.xml" RepoPath="Class/MSC/component.xml" Selected="False"/>
+            <File Name="usbd_msc.c" RepoPath="Class/MSC/usbd_msc.c" Selected="False"/>
+            <File Name="usbd_msc.h" RepoPath="Class/MSC/usbd_msc.h" Selected="False"/>
+            <File Name="usbd_msc_os.h" RepoPath="Class/MSC/usbd_msc_os.h" Selected="False"/>
+            <File Name="usbd_scsi.c" RepoPath="Class/MSC/usbd_scsi.c" Selected="False"/>
+            <File Name="usbd_scsi.h" RepoPath="Class/MSC/usbd_scsi.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/MSC/OS">
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/Template">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/Template/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/uCOS-II">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/uCOS-II/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/uCOS-III">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/uCOS-III/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="Class/MSC/Storage">
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/RAMDisk">
+                <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/RAMDisk/usbd_storage.c" Selected="False"/>
+                <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/RAMDisk/usbd_storage.h" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/Template">
+                <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/Template/usbd_storage.c" Selected="False"/>
+                <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/Template/usbd_storage.h" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/uC-FS">
+                <Folder Expanded="False" RepoPath="Class/MSC/Storage/uC-FS/V4">
+                  <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/uC-FS/V4/usbd_storage.c" Selected="False"/>
+                  <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/uC-FS/V4/usbd_storage.h" Selected="False"/>
+                </Folder>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/PHDC">
+            <File Name="component.xml" RepoPath="Class/PHDC/component.xml" Selected="False"/>
+            <File Name="usbd_phdc.c" RepoPath="Class/PHDC/usbd_phdc.c" Selected="False"/>
+            <File Name="usbd_phdc.h" RepoPath="Class/PHDC/usbd_phdc.h" Selected="False"/>
+            <File Name="usbd_phdc_os.h" RepoPath="Class/PHDC/usbd_phdc_os.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/PHDC/OS">
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/Template">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/Template/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/uCOS-II">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/uCOS-II/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/uCOS-III">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/uCOS-III/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/Vendor">
+            <File Name="component.xml" RepoPath="Class/Vendor/component.xml" Selected="False"/>
+            <File Name="usbd_vendor.c" RepoPath="Class/Vendor/usbd_vendor.c" Selected="True"/>
+            <File Name="usbd_vendor.h" RepoPath="Class/Vendor/usbd_vendor.h" Selected="True"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Drivers">
+          <Folder Expanded="False" RepoPath="Drivers/Template">
+            <File Name="component.xml" RepoPath="Drivers/Template/component.xml" Selected="False"/>
+            <File Name="usbd_bsp_template.c" RepoPath="Drivers/Template/usbd_bsp_template.c" Selected="False"/>
+            <File Name="usbd_bsp_template.h" RepoPath="Drivers/Template/usbd_bsp_template.h" Selected="False"/>
+            <File Name="usbd_drv_template.c" RepoPath="Drivers/Template/usbd_drv_template.c" Selected="False"/>
+            <File Name="usbd_drv_template.h" RepoPath="Drivers/Template/usbd_drv_template.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Drivers/drv_lib">
+            <File Name="usbd_drv_lib.c" RepoPath="Drivers/drv_lib/usbd_drv_lib.c" Selected="False"/>
+            <File Name="usbd_drv_lib.h" RepoPath="Drivers/drv_lib/usbd_drv_lib.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="OS">
+          <Folder Expanded="False" RepoPath="OS/Template">
+            <File Name="component.xml" RepoPath="OS/Template/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/Template/usbd_os.c" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="OS/uCOS-II">
+            <File Name="component.xml" RepoPath="OS/uCOS-II/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/uCOS-II/usbd_os.c" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="OS/uCOS-III">
+            <File Name="component.xml" RepoPath="OS/uCOS-III/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/uCOS-III/usbd_os.c" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Release">
+          <File Name="FasterRelease-Component-USBD-AllLayers.xml" RepoPath="Release/FasterRelease-Component-USBD-AllLayers.xml" Selected="False"/>
+          <File Name="FasterRelease-Component-USBD-Renesas.xml" RepoPath="Release/FasterRelease-Component-USBD-Renesas.xml" Selected="False"/>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Source">
+          <File Name="usbd_core.c" RepoPath="Source/usbd_core.c" Selected="False"/>
+          <File Name="usbd_core.h" RepoPath="Source/usbd_core.h" Selected="False"/>
+          <File Name="usbd_ep.c" RepoPath="Source/usbd_ep.c" Selected="False"/>
+          <File Name="usbd_internal.h" RepoPath="Source/usbd_internal.h" Selected="False"/>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/" Comment="uC/USB-Device Class: PHDC (Personal Healthcare Device Class)" Enabled="True" InheritedLabel="True" Label="uC/USB-Device V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-USBD-PHDCXX-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd/uc-usb-device.git">
+        <File Name=".gitignore" RepoPath=".gitignore" Selected="False"/>
+        <File Name=".gitmodules" RepoPath=".gitmodules" Selected="False"/>
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <Folder Expanded="True" RepoPath="App">
+          <Folder Expanded="False" RepoPath="App/Device">
+            <File Name="app_usbd.c" RepoPath="App/Device/app_usbd.c" Selected="False"/>
+            <File Name="app_usbd.h" RepoPath="App/Device/app_usbd.h" Selected="False"/>
+            <File Name="app_usbd_audio.c" RepoPath="App/Device/app_usbd_audio.c" Selected="False"/>
+            <File Name="app_usbd_cdc.c" RepoPath="App/Device/app_usbd_cdc.c" Selected="False"/>
+            <File Name="app_usbd_cdc_eem.c" RepoPath="App/Device/app_usbd_cdc_eem.c" Selected="False"/>
+            <File Name="app_usbd_cfg.h" RepoPath="App/Device/app_usbd_cfg.h" Selected="False"/>
+            <File Name="app_usbd_hid.c" RepoPath="App/Device/app_usbd_hid.c" Selected="False"/>
+            <File Name="app_usbd_msc.c" RepoPath="App/Device/app_usbd_msc.c" Selected="False"/>
+            <File Name="app_usbd_phdc.c" RepoPath="App/Device/app_usbd_phdc.c" Selected="True"/>
+            <File Name="app_usbd_vendor.c" RepoPath="App/Device/app_usbd_vendor.c" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation.c" RepoPath="App/Device/usbd_audio_drv_simulation.c" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation.h" RepoPath="App/Device/usbd_audio_drv_simulation.h" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation_data.c" RepoPath="App/Device/usbd_audio_drv_simulation_data.c" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Cfg">
+          <Folder Expanded="False" RepoPath="Cfg/Template">
+            <File Name="usbd_audio_dev_cfg.c" RepoPath="Cfg/Template/usbd_audio_dev_cfg.c" Selected="False"/>
+            <File Name="usbd_audio_dev_cfg.h" RepoPath="Cfg/Template/usbd_audio_dev_cfg.h" Selected="False"/>
+            <File Name="usbd_cfg.h" RepoPath="Cfg/Template/usbd_cfg.h" Selected="False"/>
+            <File Name="usbd_dev_cfg.c" RepoPath="Cfg/Template/usbd_dev_cfg.c" Selected="False"/>
+            <File Name="usbd_dev_cfg.h" RepoPath="Cfg/Template/usbd_dev_cfg.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Class">
+          <Folder Expanded="False" RepoPath="Class/Audio">
+            <File Name="usbd_audio.c" RepoPath="Class/Audio/usbd_audio.c" Selected="False"/>
+            <File Name="usbd_audio.h" RepoPath="Class/Audio/usbd_audio.h" Selected="False"/>
+            <File Name="usbd_audio_internal.h" RepoPath="Class/Audio/usbd_audio_internal.h" Selected="False"/>
+            <File Name="usbd_audio_os.h" RepoPath="Class/Audio/usbd_audio_os.h" Selected="False"/>
+            <File Name="usbd_audio_processing.c" RepoPath="Class/Audio/usbd_audio_processing.c" Selected="False"/>
+            <File Name="usbd_audio_processing.h" RepoPath="Class/Audio/usbd_audio_processing.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/Audio/Drivers">
+              <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec">
+                <File Name="usbd_audio_drv_uda1380_codec.c" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/usbd_audio_drv_uda1380_codec.c" Selected="False"/>
+                <File Name="usbd_audio_drv_uda1380_codec.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/usbd_audio_drv_uda1380_codec.h" Selected="False"/>
+                <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP">
+                  <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA">
+                    <File Name="uda1380.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380.h" Selected="False"/>
+                    <File Name="uda1380_codec_driver.c" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380_codec_driver.c" Selected="False"/>
+                    <File Name="uda1380_codec_driver.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380_codec_driver.h" Selected="False"/>
+                  </Folder>
+                </Folder>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/Drivers/Template">
+                <File Name="usbd_audio_drv_template.c" RepoPath="Class/Audio/Drivers/Template/usbd_audio_drv_template.c" Selected="False"/>
+                <File Name="usbd_audio_drv_template.h" RepoPath="Class/Audio/Drivers/Template/usbd_audio_drv_template.h" Selected="False"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="Class/Audio/OS">
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/Template">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/Template/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/uCOS-II">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/uCOS-II/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/uCOS-III">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/uCOS-III/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/CDC">
+            <File Name="usbd_cdc.c" RepoPath="Class/CDC/usbd_cdc.c" Selected="False"/>
+            <File Name="usbd_cdc.h" RepoPath="Class/CDC/usbd_cdc.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/CDC/ACM">
+              <File Name="component.xml" RepoPath="Class/CDC/ACM/component.xml" Selected="False"/>
+              <File Name="usbd_acm_serial.c" RepoPath="Class/CDC/ACM/usbd_acm_serial.c" Selected="False"/>
+              <File Name="usbd_acm_serial.h" RepoPath="Class/CDC/ACM/usbd_acm_serial.h" Selected="False"/>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/CDC-EEM">
+            <File Name="usbd_cdc_eem.c" RepoPath="Class/CDC-EEM/usbd_cdc_eem.c" Selected="False"/>
+            <File Name="usbd_cdc_eem.h" RepoPath="Class/CDC-EEM/usbd_cdc_eem.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/HID">
+            <File Name="component.xml" RepoPath="Class/HID/component.xml" Selected="False"/>
+            <File Name="usbd_hid.c" RepoPath="Class/HID/usbd_hid.c" Selected="False"/>
+            <File Name="usbd_hid.h" RepoPath="Class/HID/usbd_hid.h" Selected="False"/>
+            <File Name="usbd_hid_os.h" RepoPath="Class/HID/usbd_hid_os.h" Selected="False"/>
+            <File Name="usbd_hid_report.c" RepoPath="Class/HID/usbd_hid_report.c" Selected="False"/>
+            <File Name="usbd_hid_report.h" RepoPath="Class/HID/usbd_hid_report.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/HID/OS">
+              <Folder Expanded="False" RepoPath="Class/HID/OS/Template">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/Template/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/HID/OS/uCOS-II">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/uCOS-II/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/HID/OS/uCOS-III">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/uCOS-III/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/MSC">
+            <File Name="component.xml" RepoPath="Class/MSC/component.xml" Selected="False"/>
+            <File Name="usbd_msc.c" RepoPath="Class/MSC/usbd_msc.c" Selected="False"/>
+            <File Name="usbd_msc.h" RepoPath="Class/MSC/usbd_msc.h" Selected="False"/>
+            <File Name="usbd_msc_os.h" RepoPath="Class/MSC/usbd_msc_os.h" Selected="False"/>
+            <File Name="usbd_scsi.c" RepoPath="Class/MSC/usbd_scsi.c" Selected="False"/>
+            <File Name="usbd_scsi.h" RepoPath="Class/MSC/usbd_scsi.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/MSC/OS">
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/Template">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/Template/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/uCOS-II">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/uCOS-II/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/uCOS-III">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/uCOS-III/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="Class/MSC/Storage">
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/RAMDisk">
+                <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/RAMDisk/usbd_storage.c" Selected="False"/>
+                <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/RAMDisk/usbd_storage.h" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/Template">
+                <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/Template/usbd_storage.c" Selected="False"/>
+                <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/Template/usbd_storage.h" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/uC-FS">
+                <Folder Expanded="False" RepoPath="Class/MSC/Storage/uC-FS/V4">
+                  <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/uC-FS/V4/usbd_storage.c" Selected="False"/>
+                  <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/uC-FS/V4/usbd_storage.h" Selected="False"/>
+                </Folder>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/PHDC">
+            <File Name="component.xml" RepoPath="Class/PHDC/component.xml" Selected="False"/>
+            <File Name="usbd_phdc.c" RepoPath="Class/PHDC/usbd_phdc.c" Selected="True"/>
+            <File Name="usbd_phdc.h" RepoPath="Class/PHDC/usbd_phdc.h" Selected="True"/>
+            <File Name="usbd_phdc_os.h" RepoPath="Class/PHDC/usbd_phdc_os.h" Selected="True"/>
+            <Folder Expanded="False" RepoPath="Class/PHDC/OS">
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/Template">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/Template/usbd_phdc_os.c" Selected="True"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/uCOS-II">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/uCOS-II/usbd_phdc_os.c" Selected="True"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/uCOS-III">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/uCOS-III/usbd_phdc_os.c" Selected="True"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/Vendor">
+            <File Name="component.xml" RepoPath="Class/Vendor/component.xml" Selected="False"/>
+            <File Name="usbd_vendor.c" RepoPath="Class/Vendor/usbd_vendor.c" Selected="False"/>
+            <File Name="usbd_vendor.h" RepoPath="Class/Vendor/usbd_vendor.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Drivers">
+          <Folder Expanded="False" RepoPath="Drivers/Template">
+            <File Name="component.xml" RepoPath="Drivers/Template/component.xml" Selected="False"/>
+            <File Name="usbd_bsp_template.c" RepoPath="Drivers/Template/usbd_bsp_template.c" Selected="False"/>
+            <File Name="usbd_bsp_template.h" RepoPath="Drivers/Template/usbd_bsp_template.h" Selected="False"/>
+            <File Name="usbd_drv_template.c" RepoPath="Drivers/Template/usbd_drv_template.c" Selected="False"/>
+            <File Name="usbd_drv_template.h" RepoPath="Drivers/Template/usbd_drv_template.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Drivers/drv_lib">
+            <File Name="usbd_drv_lib.c" RepoPath="Drivers/drv_lib/usbd_drv_lib.c" Selected="False"/>
+            <File Name="usbd_drv_lib.h" RepoPath="Drivers/drv_lib/usbd_drv_lib.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="OS">
+          <Folder Expanded="False" RepoPath="OS/Template">
+            <File Name="component.xml" RepoPath="OS/Template/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/Template/usbd_os.c" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="OS/uCOS-II">
+            <File Name="component.xml" RepoPath="OS/uCOS-II/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/uCOS-II/usbd_os.c" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="OS/uCOS-III">
+            <File Name="component.xml" RepoPath="OS/uCOS-III/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/uCOS-III/usbd_os.c" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Release">
+          <File Name="FasterRelease-Component-USBD-AllLayers.xml" RepoPath="Release/FasterRelease-Component-USBD-AllLayers.xml" Selected="False"/>
+          <File Name="FasterRelease-Component-USBD-Renesas.xml" RepoPath="Release/FasterRelease-Component-USBD-Renesas.xml" Selected="False"/>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Source">
+          <File Name="usbd_core.c" RepoPath="Source/usbd_core.c" Selected="False"/>
+          <File Name="usbd_core.h" RepoPath="Source/usbd_core.h" Selected="False"/>
+          <File Name="usbd_ep.c" RepoPath="Source/usbd_ep.c" Selected="False"/>
+          <File Name="usbd_internal.h" RepoPath="Source/usbd_internal.h" Selected="False"/>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/Drivers/" Comment="uC/USB-Device Driver for the NXP LPC17xx, LPC214x, LPC23xx and LPC24xx (Full-Speed) " Enabled="True" InheritedLabel="True" Label="LPCxxxx V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-DRVD-LPXXXX-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4/Drivers/LPCxxxx" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd_drv/lpcxxxx.git">
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <File Name="usbd_drv_lpcxxxx.c" RepoPath="usbd_drv_lpcxxxx.c" Selected="True"/>
+        <File Name="usbd_drv_lpcxxxx.h" RepoPath="usbd_drv_lpcxxxx.h" Selected="True"/>
+        <Folder Expanded="True" RepoPath="BSP">
+          <Folder Expanded="False" RepoPath="BSP/LPC2468-EA">
+            <File Name="usbd_bsp_lpcxxxx.c" RepoPath="BSP/LPC2468-EA/usbd_bsp_lpcxxxx.c" Selected="False"/>
+            <File Name="usbd_bsp_lpcxxxx.h" RepoPath="BSP/LPC2468-EA/usbd_bsp_lpcxxxx.h" Selected="False"/>
+          </Folder>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/Drivers/" Comment="uC/USB-Device Driver for the Atmel AT32UC3C" Enabled="True" InheritedLabel="True" Label="AT32UC3C V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-DRVD-UC3CXX-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4/Drivers/AT32UC3C" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd_drv/at32uc3c.git">
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <File Name="usbd_drv_at32uc3c.c" RepoPath="usbd_drv_at32uc3c.c" Selected="True"/>
+        <File Name="usbd_drv_at32uc3c.h" RepoPath="usbd_drv_at32uc3c.h" Selected="True"/>
+        <Folder Expanded="True" RepoPath="BSP">
+          <Folder Expanded="False" RepoPath="BSP/UC3-C2_Xplained">
+            <File Name="usbd_bsp_at32uc3c.c" RepoPath="BSP/UC3-C2_Xplained/usbd_bsp_at32uc3c.c" Selected="False"/>
+            <File Name="usbd_bsp_at32uc3c.h" RepoPath="BSP/UC3-C2_Xplained/usbd_bsp_at32uc3c.h" Selected="False"/>
+          </Folder>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/Drivers/" Comment="uC/USB-Device Driver for the ST STM32F105, STM32F107, STM32 F2 and F4 series (Full-Speed)" Enabled="True" InheritedLabel="True" Label="STM32F_FS V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-DRVD-STM32F-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4/Drivers/STM32F_FS" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd_drv/stm32f_fs.git">
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <File Name="usbd_drv_stm32f_fs.c" RepoPath="usbd_drv_stm32f_fs.c" Selected="True"/>
+        <File Name="usbd_drv_stm32f_fs.h" RepoPath="usbd_drv_stm32f_fs.h" Selected="True"/>
+        <Folder Expanded="True" RepoPath="BSP">
+          <Folder Expanded="False" RepoPath="BSP/STM3220G-EVAL">
+            <File Name="usbd_bsp_stm32fxxx.c" RepoPath="BSP/STM3220G-EVAL/usbd_bsp_stm32fxxx.c" Selected="False"/>
+            <File Name="usbd_bsp_stm32fxxx.h" RepoPath="BSP/STM3220G-EVAL/usbd_bsp_stm32fxxx.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/STM3240G-EVAL">
+            <File Name="usbd_bsp_stm32fxxx.c" RepoPath="BSP/STM3240G-EVAL/usbd_bsp_stm32fxxx.c" Selected="False"/>
+            <File Name="usbd_bsp_stm32fxxx.h" RepoPath="BSP/STM3240G-EVAL/usbd_bsp_stm32fxxx.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/uC-EvalSTM32F107">
+            <File Name="usbd_bsp_stm32fxxx.c" RepoPath="BSP/uC-EvalSTM32F107/usbd_bsp_stm32fxxx.c" Selected="False"/>
+            <File Name="usbd_bsp_stm32fxxx.h" RepoPath="BSP/uC-EvalSTM32F107/usbd_bsp_stm32fxxx.h" Selected="False"/>
+          </Folder>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/Drivers/" Comment="uC/USB-Device Driver for the Freescale Kinetis K series" Enabled="True" InheritedLabel="False" Label="Kinetis_Kxx V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-DRVD-KINETK-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4/Drivers/Kinetis_Kxx" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd_drv/kinetis_kxx.git">
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <File Name="usbd_drv_kinetis_kxx.c" RepoPath="usbd_drv_kinetis_kxx.c" Selected="True"/>
+        <File Name="usbd_drv_kinetis_kxx.h" RepoPath="usbd_drv_kinetis_kxx.h" Selected="True"/>
+        <Folder Expanded="True" RepoPath="BSP">
+          <Folder Expanded="False" RepoPath="BSP/TWR-K60N512">
+            <File Name="usbd_bsp_kinetis_kxx.c" RepoPath="BSP/TWR-K60N512/usbd_bsp_kinetis_kxx.c" Selected="False"/>
+            <File Name="usbd_bsp_kinetis_kxx.h" RepoPath="BSP/TWR-K60N512/usbd_bsp_kinetis_kxx.h" Selected="False"/>
+          </Folder>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/Drivers/" Comment="uC/USB-Device Driver for the Atmel AT91SAM  (USB Device Port - High Speed)" Enabled="True" InheritedLabel="False" Label="AT91SAM_UDPHS V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-DRVD-AUDPHS-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4/Drivers/AT91SAM_UDPHS" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd_drv/at91sam_udphs.git">
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <File Name="usbd_at91sam_udphs.c" RepoPath="usbd_at91sam_udphs.c" Selected="True"/>
+        <File Name="usbd_at91sam_udphs.h" RepoPath="usbd_at91sam_udphs.h" Selected="True"/>
+        <Folder Expanded="True" RepoPath="BSP">
+          <Folder Expanded="False" RepoPath="BSP/AT91SAM9M10-G45-EK">
+            <File Name="usbd_bsp_at91sam_udphs.c" RepoPath="BSP/AT91SAM9M10-G45-EK/usbd_bsp_at91sam_udphs.c" Selected="False"/>
+            <File Name="usbd_bsp_at91sam_udphs.h" RepoPath="BSP/AT91SAM9M10-G45-EK/usbd_bsp_at91sam_udphs.h" Selected="False"/>
+          </Folder>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/Drivers/" Comment="uC/USB-Device Driver for the Renesas RX600, RX100, and V850E2/Jx4-L series" Enabled="True" InheritedLabel="True" Label="RX600 V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-DRVD-RX600X-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4/Drivers/RX600" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd_drv/rx600.git">
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <File Name="usbd_drv_rx600.c" RepoPath="usbd_drv_rx600.c" Selected="True"/>
+        <File Name="usbd_drv_rx600.h" RepoPath="usbd_drv_rx600.h" Selected="True"/>
+        <Folder Expanded="True" RepoPath="BSP">
+          <Folder Expanded="False" RepoPath="BSP/RSKRX111">
+            <File Name="usbd_bsp_rskrx111.c" RepoPath="BSP/RSKRX111/usbd_bsp_rskrx111.c" Selected="False"/>
+            <File Name="usbd_bsp_rskrx111.h" RepoPath="BSP/RSKRX111/usbd_bsp_rskrx111.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/RSKRX630">
+            <File Name="usbd_bsp_rskrx630.c" RepoPath="BSP/RSKRX630/usbd_bsp_rskrx630.c" Selected="False"/>
+            <File Name="usbd_bsp_rskrx630.h" RepoPath="BSP/RSKRX630/usbd_bsp_rskrx630.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/SIM205">
+            <File Name="usbd_bsp_sim205.c" RepoPath="BSP/SIM205/usbd_bsp_sim205.c" Selected="False"/>
+            <File Name="usbd_bsp_sim205.h" RepoPath="BSP/SIM205/usbd_bsp_sim205.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/TK-850-JG4L">
+            <File Name="usbd_bsp_v850e2jg4l.c" RepoPath="BSP/TK-850-JG4L/usbd_bsp_v850e2jg4l.c" Selected="False"/>
+            <File Name="usbd_bsp_v850e2jg4l.h" RepoPath="BSP/TK-850-JG4L/usbd_bsp_v850e2jg4l.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/V850E2-Jx4L">
+            <File Name="usbd_bsp_v850e2jx4l.c" RepoPath="BSP/V850E2-Jx4L/usbd_bsp_v850e2jx4l.c" Selected="False"/>
+            <File Name="usbd_bsp_v850e2jx4l.h" RepoPath="BSP/V850E2-Jx4L/usbd_bsp_v850e2jx4l.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/YLCDRX63N">
+            <File Name="usbd_bsp_ylcdrx63n.c" RepoPath="BSP/YLCDRX63N/usbd_bsp_ylcdrx63n.c" Selected="False"/>
+            <File Name="usbd_bsp_ylcdrx63n.h" RepoPath="BSP/YLCDRX63N/usbd_bsp_ylcdrx63n.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/YRDKRX62N">
+            <File Name="usbd_bsp_yrdkrx62n.c" RepoPath="BSP/YRDKRX62N/usbd_bsp_yrdkrx62n.c" Selected="False"/>
+            <File Name="usbd_bsp_yrdkrx62n.h" RepoPath="BSP/YRDKRX62N/usbd_bsp_yrdkrx62n.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/YRDKRX63N">
+            <File Name="usbd_bsp_yrdkrx63n.c" RepoPath="BSP/YRDKRX63N/usbd_bsp_yrdkrx63n.c" Selected="False"/>
+            <File Name="usbd_bsp_yrdkrx63n.h" RepoPath="BSP/YRDKRX63N/usbd_bsp_yrdkrx63n.h" Selected="False"/>
+          </Folder>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/Drivers/" Comment="uC/USB-Device Driver for the Atmel UC3 A and B series" Enabled="True" InheritedLabel="False" Label="AT32UC3x V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-DRVD-32UC3A-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4/Drivers/AT32UC3x" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd_drv/at32uc3x.git">
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <File Name="usbd_drv_at32uc3x.c" RepoPath="usbd_drv_at32uc3x.c" Selected="True"/>
+        <File Name="usbd_drv_at32uc3x.h" RepoPath="usbd_drv_at32uc3x.h" Selected="True"/>
+        <Folder Expanded="True" RepoPath="BSP">
+          <Folder Expanded="False" RepoPath="BSP/EVK1100">
+            <File Name="usbd_bsp_at32uc3x.c" RepoPath="BSP/EVK1100/usbd_bsp_at32uc3x.c" Selected="False"/>
+            <File Name="usbd_bsp_at32uc3x.h" RepoPath="BSP/EVK1100/usbd_bsp_at32uc3x.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/EVK1101">
+            <File Name="usbd_bsp_at32uc3x.c" RepoPath="BSP/EVK1101/usbd_bsp_at32uc3x.c" Selected="False"/>
+            <File Name="usbd_bsp_at32uc3x.h" RepoPath="BSP/EVK1101/usbd_bsp_at32uc3x.h" Selected="False"/>
+          </Folder>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/Drivers/" Comment="uC/USB-Device Driver for the ST STM32F102, STM32F103, and STM32L1xxx series" Enabled="True" InheritedLabel="True" Label="STM32xxx V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-DRVD-STM32X-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4/Drivers/STM32xxx" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd_drv/stm32xxx.git">
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <File Name="usbd_drv_stm32xxx.c" RepoPath="usbd_drv_stm32xxx.c" Selected="True"/>
+        <File Name="usbd_drv_stm32xxx.h" RepoPath="usbd_drv_stm32xxx.h" Selected="True"/>
+        <Folder Expanded="True" RepoPath="BSP">
+          <Folder Expanded="False" RepoPath="BSP/STM3210E-EVAL">
+            <File Name="usbd_bsp_stm32xxx.c" RepoPath="BSP/STM3210E-EVAL/usbd_bsp_stm32xxx.c" Selected="False"/>
+            <File Name="usbd_bsp_stm32xxx.h" RepoPath="BSP/STM3210E-EVAL/usbd_bsp_stm32xxx.h" Selected="False"/>
+          </Folder>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/Drivers/" Comment="uC/USB-Device Driver for the ST STR91xxx" Enabled="True" InheritedLabel="False" Label="STR91xxx %v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-DRVD-STR91X-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4/Drivers/STR91xxx" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd_drv/str91xxx.git">
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <File Name="usbd_drv_str91xxx.c" RepoPath="usbd_drv_str91xxx.c" Selected="True"/>
+        <File Name="usbd_drv_str91xxx.h" RepoPath="usbd_drv_str91xxx.h" Selected="True"/>
+        <Folder Expanded="True" RepoPath="BSP">
+          <Folder Expanded="False" RepoPath="BSP/STR912-SK">
+            <File Name="usbd_bsp_str91xxx.c" RepoPath="BSP/STR912-SK/usbd_bsp_str91xxx.c" Selected="False"/>
+            <File Name="usbd_bsp_str91xxx.h" RepoPath="BSP/STR912-SK/usbd_bsp_str91xxx.h" Selected="False"/>
+          </Folder>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/Drivers/" Comment="uC/USB-Device Driver for the NXP LPC313x, LPC185x, LPC183x, LPC182x, LPC435x, LPC433x, LPC432x (Full-Speed/High-Speed) " Enabled="False" InheritedLabel="False" Label="LPCxx_USBx V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-DRVD-LPCXXU-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4/Drivers/LPCxx_USBx" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd_drv/lpcxx_usbx.git">
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <File Name="usbd_drv_synopsys_otg_hs.c" RepoPath="usbd_drv_synopsys_otg_hs.c" Selected="False"/>
+        <File Name="usbd_drv_synopsys_otg_hs.h" RepoPath="usbd_drv_synopsys_otg_hs.h" Selected="False"/>
+        <Folder Expanded="True" RepoPath="BSP">
+          <Folder Expanded="False" RepoPath="BSP/LPC-4350-DB1">
+            <File Name="usbd_bsp_lpcxx_usbx.c" RepoPath="BSP/LPC-4350-DB1/usbd_bsp_lpcxx_usbx.c" Selected="False"/>
+            <File Name="usbd_bsp_lpcxx_usbx.h" RepoPath="BSP/LPC-4350-DB1/usbd_bsp_lpcxx_usbx.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/LPC3131-EA">
+            <File Name="usbd_bsp_lpcxx_usbx.c" RepoPath="BSP/LPC3131-EA/usbd_bsp_lpcxx_usbx.c" Selected="False"/>
+            <File Name="usbd_bsp_lpcxx_usbx.h" RepoPath="BSP/LPC3131-EA/usbd_bsp_lpcxx_usbx.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/MCB1800">
+            <File Name="usbd_bsp_lpcxx_usbx.c" RepoPath="BSP/MCB1800/usbd_bsp_lpcxx_usbx.c" Selected="False"/>
+            <File Name="usbd_bsp_lpcxx_usbx.h" RepoPath="BSP/MCB1800/usbd_bsp_lpcxx_usbx.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/ZC702">
+            <File Name="usbd_bsp_zc702.c" RepoPath="BSP/ZC702/usbd_bsp_zc702.c" Selected="False"/>
+            <File Name="usbd_bsp_zc702.h" RepoPath="BSP/ZC702/usbd_bsp_zc702.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/ZedBoard">
+            <File Name="usbd_bsp_zedboard.c" RepoPath="BSP/ZedBoard/usbd_bsp_zedboard.c" Selected="False"/>
+            <File Name="usbd_bsp_zedboard.h" RepoPath="BSP/ZedBoard/usbd_bsp_zedboard.h" Selected="False"/>
+          </Folder>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/Drivers/" Comment="uC/USB-Device Driver for the TI RM48 series" Enabled="True" InheritedLabel="False" Label="RM48x V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-DRVD-RM48XX-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4/Drivers/RM48x" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd_drv/rm48x.git">
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <File Name="usbd_drv_rm48x.c" RepoPath="usbd_drv_rm48x.c" Selected="True"/>
+        <File Name="usbd_drv_rm48x.h" RepoPath="usbd_drv_rm48x.h" Selected="True"/>
+        <Folder Expanded="True" RepoPath="BSP">
+          <Folder Expanded="False" RepoPath="BSP/RM48L950-HDK">
+            <File Name="usbd_bsp_rm48x.c" RepoPath="BSP/RM48L950-HDK/usbd_bsp_rm48x.c" Selected="False"/>
+            <File Name="usbd_bsp_rm48x.h" RepoPath="BSP/RM48L950-HDK/usbd_bsp_rm48x.h" Selected="False"/>
+          </Folder>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/" Comment="uC/USB-Device Class: Audio (Audio Class)" Enabled="True" InheritedLabel="False" Label="uC/USB-Device V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-USBD-AUDIOX-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd/uc-usb-device.git">
+        <File Name=".gitignore" RepoPath=".gitignore" Selected="False"/>
+        <File Name=".gitmodules" RepoPath=".gitmodules" Selected="False"/>
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <Folder Expanded="True" RepoPath="App">
+          <Folder Expanded="True" RepoPath="App/Device">
+            <File Name="app_usbd.c" RepoPath="App/Device/app_usbd.c" Selected="False"/>
+            <File Name="app_usbd.h" RepoPath="App/Device/app_usbd.h" Selected="False"/>
+            <File Name="app_usbd_audio.c" RepoPath="App/Device/app_usbd_audio.c" Selected="True"/>
+            <File Name="app_usbd_cdc.c" RepoPath="App/Device/app_usbd_cdc.c" Selected="False"/>
+            <File Name="app_usbd_cdc_eem.c" RepoPath="App/Device/app_usbd_cdc_eem.c" Selected="False"/>
+            <File Name="app_usbd_cfg.h" RepoPath="App/Device/app_usbd_cfg.h" Selected="False"/>
+            <File Name="app_usbd_hid.c" RepoPath="App/Device/app_usbd_hid.c" Selected="False"/>
+            <File Name="app_usbd_msc.c" RepoPath="App/Device/app_usbd_msc.c" Selected="False"/>
+            <File Name="app_usbd_phdc.c" RepoPath="App/Device/app_usbd_phdc.c" Selected="False"/>
+            <File Name="app_usbd_vendor.c" RepoPath="App/Device/app_usbd_vendor.c" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation.c" RepoPath="App/Device/usbd_audio_drv_simulation.c" Selected="True"/>
+            <File Name="usbd_audio_drv_simulation.h" RepoPath="App/Device/usbd_audio_drv_simulation.h" Selected="True"/>
+            <File Name="usbd_audio_drv_simulation_data.c" RepoPath="App/Device/usbd_audio_drv_simulation_data.c" Selected="True"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Cfg">
+          <Folder Expanded="False" RepoPath="Cfg/Template">
+            <File Name="usbd_audio_dev_cfg.c" RepoPath="Cfg/Template/usbd_audio_dev_cfg.c" Selected="True"/>
+            <File Name="usbd_audio_dev_cfg.h" RepoPath="Cfg/Template/usbd_audio_dev_cfg.h" Selected="True"/>
+            <File Name="usbd_cfg.h" RepoPath="Cfg/Template/usbd_cfg.h" Selected="False"/>
+            <File Name="usbd_dev_cfg.c" RepoPath="Cfg/Template/usbd_dev_cfg.c" Selected="False"/>
+            <File Name="usbd_dev_cfg.h" RepoPath="Cfg/Template/usbd_dev_cfg.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Class">
+          <Folder Expanded="False" RepoPath="Class/Audio">
+            <File Name="usbd_audio.c" RepoPath="Class/Audio/usbd_audio.c" Selected="True"/>
+            <File Name="usbd_audio.h" RepoPath="Class/Audio/usbd_audio.h" Selected="True"/>
+            <File Name="usbd_audio_internal.h" RepoPath="Class/Audio/usbd_audio_internal.h" Selected="True"/>
+            <File Name="usbd_audio_os.h" RepoPath="Class/Audio/usbd_audio_os.h" Selected="True"/>
+            <File Name="usbd_audio_processing.c" RepoPath="Class/Audio/usbd_audio_processing.c" Selected="True"/>
+            <File Name="usbd_audio_processing.h" RepoPath="Class/Audio/usbd_audio_processing.h" Selected="True"/>
+            <Folder Expanded="False" RepoPath="Class/Audio/Drivers">
+              <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec">
+                <File Name="usbd_audio_drv_uda1380_codec.c" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/usbd_audio_drv_uda1380_codec.c" Selected="False"/>
+                <File Name="usbd_audio_drv_uda1380_codec.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/usbd_audio_drv_uda1380_codec.h" Selected="False"/>
+                <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP">
+                  <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA">
+                    <File Name="uda1380.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380.h" Selected="False"/>
+                    <File Name="uda1380_codec_driver.c" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380_codec_driver.c" Selected="False"/>
+                    <File Name="uda1380_codec_driver.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380_codec_driver.h" Selected="False"/>
+                  </Folder>
+                </Folder>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/Drivers/Template">
+                <File Name="usbd_audio_drv_template.c" RepoPath="Class/Audio/Drivers/Template/usbd_audio_drv_template.c" Selected="True"/>
+                <File Name="usbd_audio_drv_template.h" RepoPath="Class/Audio/Drivers/Template/usbd_audio_drv_template.h" Selected="True"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="Class/Audio/OS">
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/Template">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/Template/usbd_audio_os.c" Selected="True"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/uCOS-II">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/uCOS-II/usbd_audio_os.c" Selected="True"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/uCOS-III">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/uCOS-III/usbd_audio_os.c" Selected="True"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/CDC">
+            <File Name="usbd_cdc.c" RepoPath="Class/CDC/usbd_cdc.c" Selected="False"/>
+            <File Name="usbd_cdc.h" RepoPath="Class/CDC/usbd_cdc.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/CDC/ACM">
+              <File Name="component.xml" RepoPath="Class/CDC/ACM/component.xml" Selected="False"/>
+              <File Name="usbd_acm_serial.c" RepoPath="Class/CDC/ACM/usbd_acm_serial.c" Selected="False"/>
+              <File Name="usbd_acm_serial.h" RepoPath="Class/CDC/ACM/usbd_acm_serial.h" Selected="False"/>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/CDC-EEM">
+            <File Name="usbd_cdc_eem.c" RepoPath="Class/CDC-EEM/usbd_cdc_eem.c" Selected="False"/>
+            <File Name="usbd_cdc_eem.h" RepoPath="Class/CDC-EEM/usbd_cdc_eem.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/HID">
+            <File Name="component.xml" RepoPath="Class/HID/component.xml" Selected="False"/>
+            <File Name="usbd_hid.c" RepoPath="Class/HID/usbd_hid.c" Selected="False"/>
+            <File Name="usbd_hid.h" RepoPath="Class/HID/usbd_hid.h" Selected="False"/>
+            <File Name="usbd_hid_os.h" RepoPath="Class/HID/usbd_hid_os.h" Selected="False"/>
+            <File Name="usbd_hid_report.c" RepoPath="Class/HID/usbd_hid_report.c" Selected="False"/>
+            <File Name="usbd_hid_report.h" RepoPath="Class/HID/usbd_hid_report.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/HID/OS">
+              <Folder Expanded="False" RepoPath="Class/HID/OS/Template">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/Template/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/HID/OS/uCOS-II">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/uCOS-II/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/HID/OS/uCOS-III">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/uCOS-III/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/MSC">
+            <File Name="component.xml" RepoPath="Class/MSC/component.xml" Selected="False"/>
+            <File Name="usbd_msc.c" RepoPath="Class/MSC/usbd_msc.c" Selected="False"/>
+            <File Name="usbd_msc.h" RepoPath="Class/MSC/usbd_msc.h" Selected="False"/>
+            <File Name="usbd_msc_os.h" RepoPath="Class/MSC/usbd_msc_os.h" Selected="False"/>
+            <File Name="usbd_scsi.c" RepoPath="Class/MSC/usbd_scsi.c" Selected="False"/>
+            <File Name="usbd_scsi.h" RepoPath="Class/MSC/usbd_scsi.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/MSC/OS">
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/Template">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/Template/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/uCOS-II">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/uCOS-II/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/uCOS-III">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/uCOS-III/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="Class/MSC/Storage">
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/RAMDisk">
+                <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/RAMDisk/usbd_storage.c" Selected="False"/>
+                <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/RAMDisk/usbd_storage.h" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/Template">
+                <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/Template/usbd_storage.c" Selected="False"/>
+                <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/Template/usbd_storage.h" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/uC-FS">
+                <Folder Expanded="False" RepoPath="Class/MSC/Storage/uC-FS/V4">
+                  <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/uC-FS/V4/usbd_storage.c" Selected="False"/>
+                  <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/uC-FS/V4/usbd_storage.h" Selected="False"/>
+                </Folder>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/PHDC">
+            <File Name="component.xml" RepoPath="Class/PHDC/component.xml" Selected="False"/>
+            <File Name="usbd_phdc.c" RepoPath="Class/PHDC/usbd_phdc.c" Selected="False"/>
+            <File Name="usbd_phdc.h" RepoPath="Class/PHDC/usbd_phdc.h" Selected="False"/>
+            <File Name="usbd_phdc_os.h" RepoPath="Class/PHDC/usbd_phdc_os.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/PHDC/OS">
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/Template">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/Template/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/uCOS-II">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/uCOS-II/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/uCOS-III">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/uCOS-III/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/Vendor">
+            <File Name="component.xml" RepoPath="Class/Vendor/component.xml" Selected="False"/>
+            <File Name="usbd_vendor.c" RepoPath="Class/Vendor/usbd_vendor.c" Selected="False"/>
+            <File Name="usbd_vendor.h" RepoPath="Class/Vendor/usbd_vendor.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Drivers">
+          <Folder Expanded="False" RepoPath="Drivers/Template">
+            <File Name="component.xml" RepoPath="Drivers/Template/component.xml" Selected="False"/>
+            <File Name="usbd_bsp_template.c" RepoPath="Drivers/Template/usbd_bsp_template.c" Selected="False"/>
+            <File Name="usbd_bsp_template.h" RepoPath="Drivers/Template/usbd_bsp_template.h" Selected="False"/>
+            <File Name="usbd_drv_template.c" RepoPath="Drivers/Template/usbd_drv_template.c" Selected="False"/>
+            <File Name="usbd_drv_template.h" RepoPath="Drivers/Template/usbd_drv_template.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Drivers/drv_lib">
+            <File Name="usbd_drv_lib.c" RepoPath="Drivers/drv_lib/usbd_drv_lib.c" Selected="False"/>
+            <File Name="usbd_drv_lib.h" RepoPath="Drivers/drv_lib/usbd_drv_lib.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="OS">
+          <Folder Expanded="False" RepoPath="OS/Template">
+            <File Name="component.xml" RepoPath="OS/Template/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/Template/usbd_os.c" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="OS/uCOS-II">
+            <File Name="component.xml" RepoPath="OS/uCOS-II/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/uCOS-II/usbd_os.c" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="OS/uCOS-III">
+            <File Name="component.xml" RepoPath="OS/uCOS-III/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/uCOS-III/usbd_os.c" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="False" RepoPath="Release">
+          <File Name="FasterRelease-Component-USBD-AllLayers.xml" RepoPath="Release/FasterRelease-Component-USBD-AllLayers.xml" Selected="False"/>
+          <File Name="FasterRelease-Component-USBD-Renesas.xml" RepoPath="Release/FasterRelease-Component-USBD-Renesas.xml" Selected="False"/>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Source">
+          <File Name="usbd_core.c" RepoPath="Source/usbd_core.c" Selected="False"/>
+          <File Name="usbd_core.h" RepoPath="Source/usbd_core.h" Selected="False"/>
+          <File Name="usbd_ep.c" RepoPath="Source/usbd_ep.c" Selected="False"/>
+          <File Name="usbd_internal.h" RepoPath="Source/usbd_internal.h" Selected="False"/>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/Drivers/" Comment="uC/USB-Device Driver for the Renesas RZ/A series and RX64M" Enabled="True" InheritedLabel="False" Label="Renesas_USBHS V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-DRVD-RZRX64-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4/Drivers/Renesas_USBHS" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd_drv/renesas_usbhs.git">
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <File Name="usbd_drv_renesas_usbhs.c" RepoPath="usbd_drv_renesas_usbhs.c" Selected="True"/>
+        <File Name="usbd_drv_renesas_usbhs.h" RepoPath="usbd_drv_renesas_usbhs.h" Selected="True"/>
+        <Folder Expanded="True" RepoPath="BSP">
+          <Folder Expanded="False" RepoPath="BSP/RSK-RZA1H">
+            <File Name="usbd_bsp_renesas_usbhs.c" RepoPath="BSP/RSK-RZA1H/usbd_bsp_renesas_usbhs.c" Selected="False"/>
+            <File Name="usbd_bsp_renesas_usbhs.h" RepoPath="BSP/RSK-RZA1H/usbd_bsp_renesas_usbhs.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/RTK772100FC">
+            <File Name="usbd_bsp_renesas_usbhs.c" RepoPath="BSP/RTK772100FC/usbd_bsp_renesas_usbhs.c" Selected="False"/>
+            <File Name="usbd_bsp_renesas_usbhs.h" RepoPath="BSP/RTK772100FC/usbd_bsp_renesas_usbhs.h" Selected="False"/>
+          </Folder>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/" Comment="uC/USB-Device Class: CDC EEM (Communication Device Class - Ethernet Emulation Model)" Enabled="True" InheritedLabel="False" Label="uC/USB-Device V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-USBD-CDCEEM-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd/uc-usb-device.git">
+        <File Name=".gitignore" RepoPath=".gitignore" Selected="False"/>
+        <File Name=".gitmodules" RepoPath=".gitmodules" Selected="False"/>
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <Folder Expanded="True" RepoPath="App">
+          <Folder Expanded="True" RepoPath="App/Device">
+            <File Name="app_usbd.c" RepoPath="App/Device/app_usbd.c" Selected="False"/>
+            <File Name="app_usbd.h" RepoPath="App/Device/app_usbd.h" Selected="False"/>
+            <File Name="app_usbd_audio.c" RepoPath="App/Device/app_usbd_audio.c" Selected="False"/>
+            <File Name="app_usbd_cdc.c" RepoPath="App/Device/app_usbd_cdc.c" Selected="False"/>
+            <File Name="app_usbd_cdc_eem.c" RepoPath="App/Device/app_usbd_cdc_eem.c" Selected="True"/>
+            <File Name="app_usbd_cfg.h" RepoPath="App/Device/app_usbd_cfg.h" Selected="False"/>
+            <File Name="app_usbd_hid.c" RepoPath="App/Device/app_usbd_hid.c" Selected="False"/>
+            <File Name="app_usbd_msc.c" RepoPath="App/Device/app_usbd_msc.c" Selected="False"/>
+            <File Name="app_usbd_phdc.c" RepoPath="App/Device/app_usbd_phdc.c" Selected="False"/>
+            <File Name="app_usbd_vendor.c" RepoPath="App/Device/app_usbd_vendor.c" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation.c" RepoPath="App/Device/usbd_audio_drv_simulation.c" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation.h" RepoPath="App/Device/usbd_audio_drv_simulation.h" Selected="False"/>
+            <File Name="usbd_audio_drv_simulation_data.c" RepoPath="App/Device/usbd_audio_drv_simulation_data.c" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Cfg">
+          <Folder Expanded="False" RepoPath="Cfg/Template">
+            <File Name="usbd_audio_dev_cfg.c" RepoPath="Cfg/Template/usbd_audio_dev_cfg.c" Selected="False"/>
+            <File Name="usbd_audio_dev_cfg.h" RepoPath="Cfg/Template/usbd_audio_dev_cfg.h" Selected="False"/>
+            <File Name="usbd_cfg.h" RepoPath="Cfg/Template/usbd_cfg.h" Selected="False"/>
+            <File Name="usbd_dev_cfg.c" RepoPath="Cfg/Template/usbd_dev_cfg.c" Selected="False"/>
+            <File Name="usbd_dev_cfg.h" RepoPath="Cfg/Template/usbd_dev_cfg.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Class">
+          <Folder Expanded="False" RepoPath="Class/Audio">
+            <File Name="usbd_audio.c" RepoPath="Class/Audio/usbd_audio.c" Selected="False"/>
+            <File Name="usbd_audio.h" RepoPath="Class/Audio/usbd_audio.h" Selected="False"/>
+            <File Name="usbd_audio_internal.h" RepoPath="Class/Audio/usbd_audio_internal.h" Selected="False"/>
+            <File Name="usbd_audio_os.h" RepoPath="Class/Audio/usbd_audio_os.h" Selected="False"/>
+            <File Name="usbd_audio_processing.c" RepoPath="Class/Audio/usbd_audio_processing.c" Selected="False"/>
+            <File Name="usbd_audio_processing.h" RepoPath="Class/Audio/usbd_audio_processing.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/Audio/Drivers">
+              <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec">
+                <File Name="usbd_audio_drv_uda1380_codec.c" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/usbd_audio_drv_uda1380_codec.c" Selected="False"/>
+                <File Name="usbd_audio_drv_uda1380_codec.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/usbd_audio_drv_uda1380_codec.h" Selected="False"/>
+                <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP">
+                  <Folder Expanded="False" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA">
+                    <File Name="uda1380.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380.h" Selected="False"/>
+                    <File Name="uda1380_codec_driver.c" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380_codec_driver.c" Selected="False"/>
+                    <File Name="uda1380_codec_driver.h" RepoPath="Class/Audio/Drivers/NXP-UDA1380-Codec/BSP/LPC3131-EA/uda1380_codec_driver.h" Selected="False"/>
+                  </Folder>
+                </Folder>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/Drivers/Template">
+                <File Name="usbd_audio_drv_template.c" RepoPath="Class/Audio/Drivers/Template/usbd_audio_drv_template.c" Selected="False"/>
+                <File Name="usbd_audio_drv_template.h" RepoPath="Class/Audio/Drivers/Template/usbd_audio_drv_template.h" Selected="False"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="Class/Audio/OS">
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/Template">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/Template/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/uCOS-II">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/uCOS-II/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/Audio/OS/uCOS-III">
+                <File Name="usbd_audio_os.c" RepoPath="Class/Audio/OS/uCOS-III/usbd_audio_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/CDC">
+            <File Name="usbd_cdc.c" RepoPath="Class/CDC/usbd_cdc.c" Selected="False"/>
+            <File Name="usbd_cdc.h" RepoPath="Class/CDC/usbd_cdc.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/CDC/ACM">
+              <File Name="component.xml" RepoPath="Class/CDC/ACM/component.xml" Selected="False"/>
+              <File Name="usbd_acm_serial.c" RepoPath="Class/CDC/ACM/usbd_acm_serial.c" Selected="False"/>
+              <File Name="usbd_acm_serial.h" RepoPath="Class/CDC/ACM/usbd_acm_serial.h" Selected="False"/>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/CDC-EEM">
+            <File Name="usbd_cdc_eem.c" RepoPath="Class/CDC-EEM/usbd_cdc_eem.c" Selected="True"/>
+            <File Name="usbd_cdc_eem.h" RepoPath="Class/CDC-EEM/usbd_cdc_eem.h" Selected="True"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/HID">
+            <File Name="component.xml" RepoPath="Class/HID/component.xml" Selected="False"/>
+            <File Name="usbd_hid.c" RepoPath="Class/HID/usbd_hid.c" Selected="False"/>
+            <File Name="usbd_hid.h" RepoPath="Class/HID/usbd_hid.h" Selected="False"/>
+            <File Name="usbd_hid_os.h" RepoPath="Class/HID/usbd_hid_os.h" Selected="False"/>
+            <File Name="usbd_hid_report.c" RepoPath="Class/HID/usbd_hid_report.c" Selected="False"/>
+            <File Name="usbd_hid_report.h" RepoPath="Class/HID/usbd_hid_report.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/HID/OS">
+              <Folder Expanded="False" RepoPath="Class/HID/OS/Template">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/Template/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/HID/OS/uCOS-II">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/uCOS-II/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/HID/OS/uCOS-III">
+                <File Name="usbd_hid_os.c" RepoPath="Class/HID/OS/uCOS-III/usbd_hid_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/MSC">
+            <File Name="component.xml" RepoPath="Class/MSC/component.xml" Selected="False"/>
+            <File Name="usbd_msc.c" RepoPath="Class/MSC/usbd_msc.c" Selected="False"/>
+            <File Name="usbd_msc.h" RepoPath="Class/MSC/usbd_msc.h" Selected="False"/>
+            <File Name="usbd_msc_os.h" RepoPath="Class/MSC/usbd_msc_os.h" Selected="False"/>
+            <File Name="usbd_scsi.c" RepoPath="Class/MSC/usbd_scsi.c" Selected="False"/>
+            <File Name="usbd_scsi.h" RepoPath="Class/MSC/usbd_scsi.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/MSC/OS">
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/Template">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/Template/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/uCOS-II">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/uCOS-II/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/OS/uCOS-III">
+                <File Name="usbd_msc_os.c" RepoPath="Class/MSC/OS/uCOS-III/usbd_msc_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+            <Folder Expanded="False" RepoPath="Class/MSC/Storage">
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/RAMDisk">
+                <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/RAMDisk/usbd_storage.c" Selected="False"/>
+                <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/RAMDisk/usbd_storage.h" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/Template">
+                <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/Template/usbd_storage.c" Selected="False"/>
+                <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/Template/usbd_storage.h" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/MSC/Storage/uC-FS">
+                <Folder Expanded="False" RepoPath="Class/MSC/Storage/uC-FS/V4">
+                  <File Name="usbd_storage.c" RepoPath="Class/MSC/Storage/uC-FS/V4/usbd_storage.c" Selected="False"/>
+                  <File Name="usbd_storage.h" RepoPath="Class/MSC/Storage/uC-FS/V4/usbd_storage.h" Selected="False"/>
+                </Folder>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/PHDC">
+            <File Name="component.xml" RepoPath="Class/PHDC/component.xml" Selected="False"/>
+            <File Name="usbd_phdc.c" RepoPath="Class/PHDC/usbd_phdc.c" Selected="False"/>
+            <File Name="usbd_phdc.h" RepoPath="Class/PHDC/usbd_phdc.h" Selected="False"/>
+            <File Name="usbd_phdc_os.h" RepoPath="Class/PHDC/usbd_phdc_os.h" Selected="False"/>
+            <Folder Expanded="False" RepoPath="Class/PHDC/OS">
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/Template">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/Template/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/uCOS-II">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/uCOS-II/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+              <Folder Expanded="False" RepoPath="Class/PHDC/OS/uCOS-III">
+                <File Name="usbd_phdc_os.c" RepoPath="Class/PHDC/OS/uCOS-III/usbd_phdc_os.c" Selected="False"/>
+              </Folder>
+            </Folder>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Class/Vendor">
+            <File Name="component.xml" RepoPath="Class/Vendor/component.xml" Selected="False"/>
+            <File Name="usbd_vendor.c" RepoPath="Class/Vendor/usbd_vendor.c" Selected="False"/>
+            <File Name="usbd_vendor.h" RepoPath="Class/Vendor/usbd_vendor.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Drivers">
+          <Folder Expanded="False" RepoPath="Drivers/Template">
+            <File Name="component.xml" RepoPath="Drivers/Template/component.xml" Selected="False"/>
+            <File Name="usbd_bsp_template.c" RepoPath="Drivers/Template/usbd_bsp_template.c" Selected="False"/>
+            <File Name="usbd_bsp_template.h" RepoPath="Drivers/Template/usbd_bsp_template.h" Selected="False"/>
+            <File Name="usbd_drv_template.c" RepoPath="Drivers/Template/usbd_drv_template.c" Selected="False"/>
+            <File Name="usbd_drv_template.h" RepoPath="Drivers/Template/usbd_drv_template.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="Drivers/drv_lib">
+            <File Name="usbd_drv_lib.c" RepoPath="Drivers/drv_lib/usbd_drv_lib.c" Selected="False"/>
+            <File Name="usbd_drv_lib.h" RepoPath="Drivers/drv_lib/usbd_drv_lib.h" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="True" RepoPath="OS">
+          <Folder Expanded="False" RepoPath="OS/Template">
+            <File Name="component.xml" RepoPath="OS/Template/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/Template/usbd_os.c" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="OS/uCOS-II">
+            <File Name="component.xml" RepoPath="OS/uCOS-II/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/uCOS-II/usbd_os.c" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="OS/uCOS-III">
+            <File Name="component.xml" RepoPath="OS/uCOS-III/component.xml" Selected="False"/>
+            <File Name="usbd_os.c" RepoPath="OS/uCOS-III/usbd_os.c" Selected="False"/>
+          </Folder>
+        </Folder>
+        <Folder Expanded="False" RepoPath="Release">
+          <File Name="FasterRelease-Component-USBD-AllLayers.xml" RepoPath="Release/FasterRelease-Component-USBD-AllLayers.xml" Selected="False"/>
+          <File Name="FasterRelease-Component-USBD-Renesas.xml" RepoPath="Release/FasterRelease-Component-USBD-Renesas.xml" Selected="False"/>
+        </Folder>
+        <Folder Expanded="True" RepoPath="Source">
+          <File Name="usbd_core.c" RepoPath="Source/usbd_core.c" Selected="False"/>
+          <File Name="usbd_core.h" RepoPath="Source/usbd_core.h" Selected="False"/>
+          <File Name="usbd_ep.c" RepoPath="Source/usbd_ep.c" Selected="False"/>
+          <File Name="usbd_internal.h" RepoPath="Source/usbd_internal.h" Selected="False"/>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/Drivers/" Comment="uC/USB-Device Driver for the Texas Instruments Tiva C series" Enabled="True" InheritedLabel="False" Label="TM4C123x V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-DRVD-TM4CXX-X-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4/Drivers/TM4C123x" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd_drv/tm4c123x.git">
+        <File Name="usbd_drv_tm4c123x.c" RepoPath="usbd_drv_tm4c123x.c" Selected="True"/>
+        <File Name="usbd_drv_tm4c123x.h" RepoPath="usbd_drv_tm4c123x.h" Selected="True"/>
+        <Folder Expanded="True" RepoPath="BSP">
+          <Folder Expanded="False" RepoPath="BSP/EKI-LM4F232">
+            <File Name="usbd_bsp_tm4c123x.c" RepoPath="BSP/EKI-LM4F232/usbd_bsp_tm4c123x.c" Selected="False"/>
+            <File Name="usbd_bsp_tm4c123x.h" RepoPath="BSP/EKI-LM4F232/usbd_bsp_tm4c123x.h" Selected="False"/>
+          </Folder>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+    <ComponentItem AmazonVersion="%v" AmazonVersionAutomatic="True" AmazonVirtualFolder="uC-USB-Device/Drivers/" Comment="uC/USB Device Driver for the NXP LPC18xx, LPC31xx, LPC43xx series, the Xilinx Zynq-7000 SoC (Full-Speed/High-Speed)" Enabled="True" InheritedLabel="False" Label="Synopsys_OTG_HS V%v" LabelAutomatic="True" RecursiveLabel="False" SKU="USB-DRVD-SYNOTG-P-P1">
+      <Repository Branch="master" Path="$/Micrium/Software/uC-USB-Device-V4/Drivers/Synopsys_OTG_HS" Reference="*LATEST-TAG" URL="ssh://git@stash.micrium.com:7999/uc_usbd_drv/lpcxx_usbx.git">
+        <File Name="component.xml" RepoPath="component.xml" Selected="False"/>
+        <File Name="usbd_drv_synopsys_otg_hs.c" RepoPath="usbd_drv_synopsys_otg_hs.c" Selected="True"/>
+        <File Name="usbd_drv_synopsys_otg_hs.h" RepoPath="usbd_drv_synopsys_otg_hs.h" Selected="True"/>
+        <Folder Expanded="True" RepoPath="BSP">
+          <Folder Expanded="False" RepoPath="BSP/LPC-4350-DB1">
+            <File Name="usbd_bsp_lpcxx_usbx.c" RepoPath="BSP/LPC-4350-DB1/usbd_bsp_lpcxx_usbx.c" Selected="False"/>
+            <File Name="usbd_bsp_lpcxx_usbx.h" RepoPath="BSP/LPC-4350-DB1/usbd_bsp_lpcxx_usbx.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/LPC3131-EA">
+            <File Name="usbd_bsp_lpcxx_usbx.c" RepoPath="BSP/LPC3131-EA/usbd_bsp_lpcxx_usbx.c" Selected="False"/>
+            <File Name="usbd_bsp_lpcxx_usbx.h" RepoPath="BSP/LPC3131-EA/usbd_bsp_lpcxx_usbx.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/MCB1800">
+            <File Name="usbd_bsp_lpcxx_usbx.c" RepoPath="BSP/MCB1800/usbd_bsp_lpcxx_usbx.c" Selected="False"/>
+            <File Name="usbd_bsp_lpcxx_usbx.h" RepoPath="BSP/MCB1800/usbd_bsp_lpcxx_usbx.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/ZC702">
+            <File Name="usbd_bsp_zc702.c" RepoPath="BSP/ZC702/usbd_bsp_zc702.c" Selected="False"/>
+            <File Name="usbd_bsp_zc702.h" RepoPath="BSP/ZC702/usbd_bsp_zc702.h" Selected="False"/>
+          </Folder>
+          <Folder Expanded="False" RepoPath="BSP/ZedBoard">
+            <File Name="usbd_bsp_zedboard.c" RepoPath="BSP/ZedBoard/usbd_bsp_zedboard.c" Selected="False"/>
+            <File Name="usbd_bsp_zedboard.h" RepoPath="BSP/ZedBoard/usbd_bsp_zedboard.h" Selected="False"/>
+          </Folder>
+        </Folder>
+      </Repository>
+    </ComponentItem>
+  </Component>
+  <Email Bcc="cedric.migliorini@micrium.com" Cc="" Enabled="True" From="cedric.migliorini@micrium.com" Subject="New driver added to µC/USB-Device V4.02.00" To="usbteam@micrium.com, SalesTeam@Micrium.com, ExecutiveTeam@Micrium.com">
+    <EmailBody>Hello,
+
+A new driver has been added to µC/USB-Device V4.02.00 on the Amazon server: 
+
+Renesas_USBHS, USB-DRVD-USBHSX-X-P1, uC/USB-Device Driver for the Renesas RZ/A series and RX64M
+
+The corresponding packages, USB-USBD-PKG000-X-P1 and USB-USBD-PKG0R0-X-P1, have also been updated with this driver.
+
+Kind Regards,
+USB team
+
+Note: this is an automated message sent by Fast Release 3.</EmailBody>
+  </Email>
+</Release>

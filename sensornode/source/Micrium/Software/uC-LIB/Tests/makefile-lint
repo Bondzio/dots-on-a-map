@@ -1,0 +1,25 @@
+LINT=lint-nt
+LINTFLAGS=\
+-I../make-lint \
+-I. \
+-I../../uC-LIB \
+-I../../uC-CPU \
+-I../../uC-CPU/Cfg/Template \
+-I../../uC-CPU/Win32/Visual_Studio \
+-IC:\lint\lnt \
+-IC:\lint \
+-U__cplusplus \
+-fff
+#-passes=2
+
+LINT_ARG=std.lnt include.lnt env-keil.lnt micrium.lnt
+
+EXECUTABLE=hello
+
+.PHONY: hello
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE):
+	$(LINT) $(LINTFLAGS) $(LINT_ARG) project.lnt
+

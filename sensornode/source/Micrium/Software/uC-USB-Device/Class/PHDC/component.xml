@@ -1,0 +1,45 @@
+<!-- uC/USB-Device PHDC component XML file for ConfigBuilder -->
+<!-- Author: CM -->
+
+<xs:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns:xs="http://xml.micrium.com/schema/component">
+	<!-- Components: Class - PHDC -->
+	<component id="com.micrium.ucusbd.class.phdc" name="PHDC" type="component">
+		<description> uC/USB-Device Personal Healthcare Device Class </description>
+		<sourceDir  needIncludePath="true">.</sourceDir>
+
+		<requiredComponents>
+			<component multiplicity="1">com.micrium.ucusbd.class.phdc.osport.*</component>
+		</requiredComponents>
+	</component>
+	
+	<!-- Component: uC/OS-II Port -->
+	<component id="com.micrium.ucusbd.class.phdc.osport.ucosii" name="uC/OS-II port" type="component">
+		<description> uC/USB-Device Personal Healthcare Device Class port for uCOS-II real-time kernel</description>
+		<sourceDir  needIncludePath="false">OS/uCOS-II</sourceDir>
+
+		<requiredComponents>
+			<component multiplicity="1" version="[2.92.08, *)">com.micrium.rtos.osii</component>
+		</requiredComponents>
+	</component>
+	
+	<!-- Component: uC/OS-III Port -->
+	<component id="com.micrium.ucusbd.class.phdc.osport.ucosiii" name="uC/OS-III port" type="component">
+		<description> uC/USB-Device Personal Healthcare Device Class port for uCOS-III real-time kernel</description>
+		<sourceDir  needIncludePath="false">OS/uCOS-III</sourceDir>
+
+		<requiredComponents>
+			<component multiplicity="1" version="[3.03.01, *)">com.micrium.rtos.osiii</component>
+		</requiredComponents>
+	</component>
+	
+	<!-- Component: OS Template Port -->
+	<component id="com.micrium.ucusbd.class.phdc.osport.template" name="Template port" type="component">
+		<description> uC/USB-Device Personal Healthcare Device Class template port for real-time kernel</description>
+		<sourceDir  needIncludePath="false">OS/Template</sourceDir>
+	</component>
+
+    <!-- Defined "OS" category under PHDC class -->
+    <component id="com.micrium.ucusbd.class.phdc.osport" name="OS" type="category"/>
+</xs:root>
+   

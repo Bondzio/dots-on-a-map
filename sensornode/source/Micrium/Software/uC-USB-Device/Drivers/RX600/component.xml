@@ -1,0 +1,12 @@
+<!-- uC/USB-Device RX600 driver component XML file for ConfigBuilder -->
+<!-- Author: JFD -->
+
+<xs:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns:xs="http://xml.micrium.com/schema/component">
+	<!-- Components: Drivers - RX600 -->
+	<component id="com.micrium.ucusbd.driver.rx600" name="RX600" type="component" mcuSpecific="true">
+		<description> uC/USB-Device Driver for Renesas RX platforms </description>
+		<sourceDir needIncludePath="true">.</sourceDir>
+	</component>
+</xs:root>
+   

@@ -1,0 +1,13 @@
+<!-- uC/USB-Device OS template port component XML file for ConfigBuilder -->
+<!-- Author: JFD -->
+
+<xs:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns:xs="http://xml.micrium.com/schema/component">
+
+	<!-- Components: Core - OS ports -->
+	<component id="com.micrium.ucusbd.osport.template" name="Template" type="component">
+		<description> uC/USB-Device core layer template real-time kernel port</description>
+		<sourceDir  needIncludePath="false">.</sourceDir>
+	</component>
+</xs:root>
+   
