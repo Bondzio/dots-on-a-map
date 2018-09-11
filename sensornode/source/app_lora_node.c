@@ -291,77 +291,48 @@ static int setup(SHG_CFG * SHG_Cfg)
 {
   int e;
   OS_ERR err_os;
-  //delay(3000);
-  // Open serial communications and wait for port to open:
-  //Serial.begin(9600);
  
-  // Power ON the module
   if (sx1276_init(&lora))
     return -1;
   
-  // Set transmission mode and print the result
   e = setMode(SHG_Cfg->LoraMode);
   if (e)
     return -2;
-//  PRINT_CSTSTR("%s","Setting Mode: state ");
-  //PRINT_VALUE("%d", e);
-  //PRINTLN;
-  // Setting the network key
+
   setNetworkKey(SHG_Cfg->LoraKey[0], SHG_Cfg->LoraKey[1]);
 #ifdef BAND868
-  // Select frequency channel
   e = setChannel(CH_10_868);
   if (e)
     return -3;
 #else // assuming #defined BAND900
-  // Select frequency channel
   e = setChannel(CH_05_900);
   if (e)
     return -4;
 #endif
-//  PRINT_CSTSTR("%s","Setting Channel: state ");
-//  PRINT_VALUE("%d", e);
-//  PRINTLN;
   
-  // Select output power (eXtreme, Max, High or Low)
   e = setPower((SHG_Cfg->LoraPower == 1) ? 'L' : ((SHG_Cfg->LoraPower == 2) ? 'H' : ((SHG_Cfg->LoraPower == 3) ? 'M' : 'X')));
   if (e)
     return -5;
   
-//  PRINT_CSTSTR("%s","Setting Power: state ");
-//  PRINT_VALUE("%d", e);
-//  PRINTLN;
-  
-  // Set the node address and print the result
   e = setNodeAddress(SHG_Cfg->LoraID);
   if (e)
     return -6;
-//  PRINT_CSTSTR("%s","Setting node addr: state ");
-//  PRINT_VALUE("%d", e);
-//  PRINTLN;
   
-  // Print a success message
-//  PRINT_CSTSTR("%s","SX1276 successfully configured\n");
-        OSTimeDlyHMSM(0, 0, 0, 500, OS_OPT_NONE, &err_os);
-        return 0;
+  OSTimeDlyHMSM(0, 0, 0, 500, OS_OPT_NONE, &err_os);
+  return 0;
 }
   
 static int crc7(int val) {
-   // Setup polynomial
    uint32_t pol = CRC7POLY;
-   // Align polynomial with data
-   pol = pol << (DATA7WIDTH-CRC7WIDTH-1);
-   // Loop variable (indicates which bit to test, start with highest)
    int bit = DATA7MSB;
-   // Make room for CRC value
+
+   pol = pol << (DATA7WIDTH-CRC7WIDTH-1);
    val = val << CRC7WIDTH;
    bit = bit << CRC7WIDTH;
    pol = pol << CRC7WIDTH;
-   // Insert initial vector
    val |= CRC7IVEC;
-   // Apply division until all bits done
-   while( bit & (DATA7MASK<<CRC7WIDTH)) {
-     if( bit & val )
+   while (bit & (DATA7MASK<<CRC7WIDTH)) {
+     if (bit & val)
            val ^= pol;
        bit >>= 1;
        pol >>= 1;
@@ -427,7 +398,6 @@ static int sample_air_quality(port * i2cport, uint16_t * air_quality) {
         uint16_t prediction = (buf[0] << 8) | buf[1];
         int resistance = (buf[4] << 16) | (buf[5] << 8) | buf[6];
         int status_val = buf[2];
-        //status = "FATAL" if ord(val[3]) else "OK" if status_val == 0x00 else "RUNNING" if status_val == 0x10 else "BUSY" if status_val == 0x01 else "ERROR" if status_val == 0x80 else "FATAL"
         if (status_val == 0) {
             *air_quality = prediction;
             return 0;
@@ -501,17 +471,22 @@ int  App_LoraNode (SHG_CFG * SHG_Cfg)
       return e;
   
 
+#if 0 // no proximity sensor populated
     proximity_port.handle->init(&proximity_port.config);
-    //air_quality_port.handle->init(&air_quality_port.config);
+#endif
     temperature_and_humidity_port.handle->init(&temperature_and_humidity_port.config);
+#if 0 // air quality and temperature & humidity sensors share the same I2C bus
+    air_quality_port.handle->init(&air_quality_port.config);
+#endif
     light_port.handle->init(&light_port.config);
     isl29033_init(&light_port);
 
-    // init gps
+    // init UART for gps
     PORT2.PDR.BIT.B3 = 1;
     PORT2.PODR.BIT.B3 = 0;
     OSTimeDlyHMSM(0, 0, 0, 100, OS_OPT_NONE, &err_os);
     PORT2.PODR.BIT.B3 = 1;
+
 //#define SEGMENTATION
 
     cli_welcome();
@@ -519,7 +494,7 @@ int  App_LoraNode (SHG_CFG * SHG_Cfg)
     
     while (1) {
         curr = OSTimeGet(&err_os);
-        if ((curr - prev) > (SHG_Cfg->LoopTimeSeconds * 1000)) { // 5 s period
+        if ((curr - prev) > (SHG_Cfg->LoopTimeSeconds * 1000)) {
             prev = curr;
             pl = 0;
             e = sample_temp_and_humidity(&temperature_and_humidity_port, &temperature, &humidity);
@@ -582,7 +557,7 @@ int  App_LoraNode (SHG_CFG * SHG_Cfg)
                 pl = 0;
             }
 #endif
-#if 0 // no proximity sensor (EOL)
+#if 0 // no proximity sensor
             e = sample_color_and_proximity(&proximity_port, &alpha, &red, &green, &blue, &proximity);
             pl += sprintf((char *)&message[pl], "P%hd;", proximity);
 #ifdef SEGMENTATION
